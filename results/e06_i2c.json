@@ -1,0 +1,739 @@
+{
+  "case_fast_400pf_3v3": {
+    "cb_within_mode": 1,
+    "feasible": 0,
+    "margin_ohm": -81.4997908087953,
+    "rp_max_ohm": 885.1668758578713,
+    "rp_min_ohm": 966.6666666666666
+  },
+  "case_fmplus_550pf_3v3_20ma": {
+    "cb_within_mode": 1,
+    "feasible": 1,
+    "margin_ohm": 112.50309115865349,
+    "rp_max_ohm": 257.5030911586535,
+    "rp_min_ohm": 145.0
+  },
+  "case_fmplus_550pf_3v3_3ma": {
+    "cb_within_mode": 1,
+    "feasible": 0,
+    "margin_ohm": -709.1635755080131,
+    "rp_max_ohm": 257.5030911586535,
+    "rp_min_ohm": 966.6666666666666
+  },
+  "case_standard_400pf_3v3": {
+    "cb_within_mode": 1,
+    "feasible": 1,
+    "margin_ohm": 1983.8895861929045,
+    "rp_max_ohm": 2950.556252859571,
+    "rp_min_ohm": 966.6666666666666
+  },
+  "experiment": "E6",
+  "four_seven_k": {
+    "fast": {
+      "max_cb_pf": 75.33335113684012,
+      "supports_400pf": 0,
+      "tr_100pf_ns": 398.2299943819857,
+      "tr_400pf_ns": 1592.9199775279428,
+      "within_tr_100pf": 0
+    },
+    "fmplus": {
+      "max_cb_pf": 30.133340454736047,
+      "supports_400pf": 0,
+      "tr_100pf_ns": 398.2299943819857,
+      "tr_400pf_ns": 1592.9199775279428,
+      "within_tr_100pf": 0
+    },
+    "standard": {
+      "max_cb_pf": 251.11117045613372,
+      "supports_400pf": 0,
+      "tr_100pf_ns": 398.2299943819857,
+      "tr_400pf_ns": 1592.9199775279428,
+      "within_tr_100pf": 1
+    }
+  },
+  "hidden_pattern": "The ubiquitous 4.7 kOhm pull-up is a Standard-mode (100 kHz) component. At 3.3 V it limits Cb to 251 pF in Standard mode, 75 pF in Fast mode, and 30 pF in Fast-mode Plus. Fast mode at 400 pF and 3.3 V has an empty window (Rp_min > Rp_max) with the 3 mA sink specified for Standard/Fast mode. Fast-mode Plus is feasible at 550 pF only because its sink current is 20 mA; reusing the 3 mA number manufactures a false impossibility. The 0.8473 in Rp(max) is ln(7/3), not a fitted constant.",
+  "ln_7_3": 0.8472978603872037,
+  "modes": [
+    {
+      "cb_max_pf": 400.0,
+      "fmax_khz": 100.0,
+      "iol_ma": 3.0,
+      "key": "standard",
+      "max_cb_at_4k7_pf": 251.11117045613372,
+      "name": "Standard-mode",
+      "rp_max_400pf_ohm": 2950.556252859571,
+      "rp_min_3v3_ohm": 966.6666666666666,
+      "tr_max_ns": 1000.0,
+      "vol_v": 0.4
+    },
+    {
+      "cb_max_pf": 400.0,
+      "fmax_khz": 400.0,
+      "iol_ma": 3.0,
+      "key": "fast",
+      "max_cb_at_4k7_pf": 75.33335113684012,
+      "name": "Fast-mode",
+      "rp_max_400pf_ohm": 885.1668758578713,
+      "rp_min_3v3_ohm": 966.6666666666666,
+      "tr_max_ns": 300.0,
+      "vol_v": 0.4
+    },
+    {
+      "cb_max_pf": 550.0,
+      "fmax_khz": 1000.0,
+      "iol_ma": 20.0,
+      "key": "fmplus",
+      "max_cb_at_4k7_pf": 30.133340454736047,
+      "name": "Fast-mode Plus",
+      "rp_max_400pf_ohm": 354.06675034314856,
+      "rp_min_3v3_ohm": 145.0,
+      "tr_max_ns": 119.99999999999999,
+      "vol_v": 0.4
+    }
+  ],
+  "title": "I2C pull-up sizing: mode, capacitance, and sink-current conventions",
+  "traps": {
+    "fast_400pf_empty": 1,
+    "fmplus_false_impossible_with_3ma": 1,
+    "four_k7_max_cb_fast_pf": 75.33335113684012,
+    "four_k7_max_cb_standard_pf": 251.11117045613372,
+    "four_k7_only_standard": 1
+  },
+  "windows": [
+    {
+      "cb_pf": 100.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        470.0,
+        560.0,
+        680.0,
+        819.9999999999999,
+        1000.0,
+        1200.0,
+        1500.0,
+        1800.0,
+        2200.0,
+        2700.0,
+        3300.0,
+        3900.0,
+        4700.0,
+        5600.0,
+        6800.0,
+        8200.0,
+        10000.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 11335.558344771618,
+      "mode": "standard",
+      "rp_max_ohm": 11802.225011438284,
+      "rp_min_ohm": 466.66666666666663,
+      "vdd_v": 1.8
+    },
+    {
+      "cb_pf": 200.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        470.0,
+        560.0,
+        680.0,
+        819.9999999999999,
+        1000.0,
+        1200.0,
+        1500.0,
+        1800.0,
+        2200.0,
+        2700.0,
+        3300.0,
+        3900.0,
+        4700.0,
+        5600.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 5434.445839052475,
+      "mode": "standard",
+      "rp_max_ohm": 5901.112505719142,
+      "rp_min_ohm": 466.66666666666663,
+      "vdd_v": 1.8
+    },
+    {
+      "cb_pf": 400.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        470.0,
+        560.0,
+        680.0,
+        819.9999999999999,
+        1000.0,
+        1200.0,
+        1500.0,
+        1800.0,
+        2200.0,
+        2700.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 2483.8895861929045,
+      "mode": "standard",
+      "rp_max_ohm": 2950.556252859571,
+      "rp_min_ohm": 466.66666666666663,
+      "vdd_v": 1.8
+    },
+    {
+      "cb_pf": 550.0,
+      "cb_within_mode": 0,
+      "e12_choices": [],
+      "feasible": 1,
+      "margin_ohm": 1679.1924263221126,
+      "mode": "standard",
+      "rp_max_ohm": 2145.859092988779,
+      "rp_min_ohm": 466.66666666666663,
+      "vdd_v": 1.8
+    },
+    {
+      "cb_pf": 100.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        470.0,
+        560.0,
+        680.0,
+        819.9999999999999,
+        1000.0,
+        1200.0,
+        1500.0,
+        1800.0,
+        2200.0,
+        2700.0,
+        3300.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 3074.000836764819,
+      "mode": "fast",
+      "rp_max_ohm": 3540.6675034314853,
+      "rp_min_ohm": 466.66666666666663,
+      "vdd_v": 1.8
+    },
+    {
+      "cb_pf": 200.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        470.0,
+        560.0,
+        680.0,
+        819.9999999999999,
+        1000.0,
+        1200.0,
+        1500.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 1303.667085049076,
+      "mode": "fast",
+      "rp_max_ohm": 1770.3337517157427,
+      "rp_min_ohm": 466.66666666666663,
+      "vdd_v": 1.8
+    },
+    {
+      "cb_pf": 400.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        470.0,
+        560.0,
+        680.0,
+        819.9999999999999
+      ],
+      "feasible": 1,
+      "margin_ohm": 418.5002091912047,
+      "mode": "fast",
+      "rp_max_ohm": 885.1668758578713,
+      "rp_min_ohm": 466.66666666666663,
+      "vdd_v": 1.8
+    },
+    {
+      "cb_pf": 550.0,
+      "cb_within_mode": 0,
+      "e12_choices": [],
+      "feasible": 1,
+      "margin_ohm": 177.09106122996718,
+      "mode": "fast",
+      "rp_max_ohm": 643.7577278966338,
+      "rp_min_ohm": 466.66666666666663,
+      "vdd_v": 1.8
+    },
+    {
+      "cb_pf": 100.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        82.0,
+        100.0,
+        120.0,
+        150.0,
+        180.0,
+        220.00000000000003,
+        270.0,
+        330.0,
+        390.0,
+        470.0,
+        560.0,
+        680.0,
+        819.9999999999999,
+        1000.0,
+        1200.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 1346.2670013725942,
+      "mode": "fmplus",
+      "rp_max_ohm": 1416.2670013725942,
+      "rp_min_ohm": 70.0,
+      "vdd_v": 1.8
+    },
+    {
+      "cb_pf": 200.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        82.0,
+        100.0,
+        120.0,
+        150.0,
+        180.0,
+        220.00000000000003,
+        270.0,
+        330.0,
+        390.0,
+        470.0,
+        560.0,
+        680.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 638.1335006862971,
+      "mode": "fmplus",
+      "rp_max_ohm": 708.1335006862971,
+      "rp_min_ohm": 70.0,
+      "vdd_v": 1.8
+    },
+    {
+      "cb_pf": 400.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        82.0,
+        100.0,
+        120.0,
+        150.0,
+        180.0,
+        220.00000000000003,
+        270.0,
+        330.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 284.06675034314856,
+      "mode": "fmplus",
+      "rp_max_ohm": 354.06675034314856,
+      "rp_min_ohm": 70.0,
+      "vdd_v": 1.8
+    },
+    {
+      "cb_pf": 550.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        82.0,
+        100.0,
+        120.0,
+        150.0,
+        180.0,
+        220.00000000000003
+      ],
+      "feasible": 1,
+      "margin_ohm": 187.5030911586535,
+      "mode": "fmplus",
+      "rp_max_ohm": 257.5030911586535,
+      "rp_min_ohm": 70.0,
+      "vdd_v": 1.8
+    },
+    {
+      "cb_pf": 100.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        1000.0,
+        1200.0,
+        1500.0,
+        1800.0,
+        2200.0,
+        2700.0,
+        3300.0,
+        3900.0,
+        4700.0,
+        5600.0,
+        6800.0,
+        8200.0,
+        10000.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 10835.558344771618,
+      "mode": "standard",
+      "rp_max_ohm": 11802.225011438284,
+      "rp_min_ohm": 966.6666666666666,
+      "vdd_v": 3.3
+    },
+    {
+      "cb_pf": 200.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        1000.0,
+        1200.0,
+        1500.0,
+        1800.0,
+        2200.0,
+        2700.0,
+        3300.0,
+        3900.0,
+        4700.0,
+        5600.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 4934.445839052475,
+      "mode": "standard",
+      "rp_max_ohm": 5901.112505719142,
+      "rp_min_ohm": 966.6666666666666,
+      "vdd_v": 3.3
+    },
+    {
+      "cb_pf": 400.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        1000.0,
+        1200.0,
+        1500.0,
+        1800.0,
+        2200.0,
+        2700.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 1983.8895861929045,
+      "mode": "standard",
+      "rp_max_ohm": 2950.556252859571,
+      "rp_min_ohm": 966.6666666666666,
+      "vdd_v": 3.3
+    },
+    {
+      "cb_pf": 550.0,
+      "cb_within_mode": 0,
+      "e12_choices": [],
+      "feasible": 1,
+      "margin_ohm": 1179.1924263221126,
+      "mode": "standard",
+      "rp_max_ohm": 2145.859092988779,
+      "rp_min_ohm": 966.6666666666666,
+      "vdd_v": 3.3
+    },
+    {
+      "cb_pf": 100.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        1000.0,
+        1200.0,
+        1500.0,
+        1800.0,
+        2200.0,
+        2700.0,
+        3300.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 2574.000836764819,
+      "mode": "fast",
+      "rp_max_ohm": 3540.6675034314853,
+      "rp_min_ohm": 966.6666666666666,
+      "vdd_v": 3.3
+    },
+    {
+      "cb_pf": 200.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        1000.0,
+        1200.0,
+        1500.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 803.667085049076,
+      "mode": "fast",
+      "rp_max_ohm": 1770.3337517157427,
+      "rp_min_ohm": 966.6666666666666,
+      "vdd_v": 3.3
+    },
+    {
+      "cb_pf": 400.0,
+      "cb_within_mode": 1,
+      "e12_choices": [],
+      "feasible": 0,
+      "margin_ohm": -81.4997908087953,
+      "mode": "fast",
+      "rp_max_ohm": 885.1668758578713,
+      "rp_min_ohm": 966.6666666666666,
+      "vdd_v": 3.3
+    },
+    {
+      "cb_pf": 550.0,
+      "cb_within_mode": 0,
+      "e12_choices": [],
+      "feasible": 0,
+      "margin_ohm": -322.9089387700328,
+      "mode": "fast",
+      "rp_max_ohm": 643.7577278966338,
+      "rp_min_ohm": 966.6666666666666,
+      "vdd_v": 3.3
+    },
+    {
+      "cb_pf": 100.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        150.0,
+        180.0,
+        220.00000000000003,
+        270.0,
+        330.0,
+        390.0,
+        470.0,
+        560.0,
+        680.0,
+        819.9999999999999,
+        1000.0,
+        1200.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 1271.2670013725942,
+      "mode": "fmplus",
+      "rp_max_ohm": 1416.2670013725942,
+      "rp_min_ohm": 145.0,
+      "vdd_v": 3.3
+    },
+    {
+      "cb_pf": 200.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        150.0,
+        180.0,
+        220.00000000000003,
+        270.0,
+        330.0,
+        390.0,
+        470.0,
+        560.0,
+        680.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 563.1335006862971,
+      "mode": "fmplus",
+      "rp_max_ohm": 708.1335006862971,
+      "rp_min_ohm": 145.0,
+      "vdd_v": 3.3
+    },
+    {
+      "cb_pf": 400.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        150.0,
+        180.0,
+        220.00000000000003,
+        270.0,
+        330.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 209.06675034314856,
+      "mode": "fmplus",
+      "rp_max_ohm": 354.06675034314856,
+      "rp_min_ohm": 145.0,
+      "vdd_v": 3.3
+    },
+    {
+      "cb_pf": 550.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        150.0,
+        180.0,
+        220.00000000000003
+      ],
+      "feasible": 1,
+      "margin_ohm": 112.50309115865349,
+      "mode": "fmplus",
+      "rp_max_ohm": 257.5030911586535,
+      "rp_min_ohm": 145.0,
+      "vdd_v": 3.3
+    },
+    {
+      "cb_pf": 100.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        1800.0,
+        2200.0,
+        2700.0,
+        3300.0,
+        3900.0,
+        4700.0,
+        5600.0,
+        6800.0,
+        8200.0,
+        10000.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 10268.89167810495,
+      "mode": "standard",
+      "rp_max_ohm": 11802.225011438284,
+      "rp_min_ohm": 1533.3333333333333,
+      "vdd_v": 5.0
+    },
+    {
+      "cb_pf": 200.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        1800.0,
+        2200.0,
+        2700.0,
+        3300.0,
+        3900.0,
+        4700.0,
+        5600.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 4367.779172385809,
+      "mode": "standard",
+      "rp_max_ohm": 5901.112505719142,
+      "rp_min_ohm": 1533.3333333333333,
+      "vdd_v": 5.0
+    },
+    {
+      "cb_pf": 400.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        1800.0,
+        2200.0,
+        2700.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 1417.2229195262378,
+      "mode": "standard",
+      "rp_max_ohm": 2950.556252859571,
+      "rp_min_ohm": 1533.3333333333333,
+      "vdd_v": 5.0
+    },
+    {
+      "cb_pf": 550.0,
+      "cb_within_mode": 0,
+      "e12_choices": [],
+      "feasible": 1,
+      "margin_ohm": 612.5257596554459,
+      "mode": "standard",
+      "rp_max_ohm": 2145.859092988779,
+      "rp_min_ohm": 1533.3333333333333,
+      "vdd_v": 5.0
+    },
+    {
+      "cb_pf": 100.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        1800.0,
+        2200.0,
+        2700.0,
+        3300.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 2007.334170098152,
+      "mode": "fast",
+      "rp_max_ohm": 3540.6675034314853,
+      "rp_min_ohm": 1533.3333333333333,
+      "vdd_v": 5.0
+    },
+    {
+      "cb_pf": 200.0,
+      "cb_within_mode": 1,
+      "e12_choices": [],
+      "feasible": 1,
+      "margin_ohm": 237.0004183824094,
+      "mode": "fast",
+      "rp_max_ohm": 1770.3337517157427,
+      "rp_min_ohm": 1533.3333333333333,
+      "vdd_v": 5.0
+    },
+    {
+      "cb_pf": 400.0,
+      "cb_within_mode": 1,
+      "e12_choices": [],
+      "feasible": 0,
+      "margin_ohm": -648.1664574754619,
+      "mode": "fast",
+      "rp_max_ohm": 885.1668758578713,
+      "rp_min_ohm": 1533.3333333333333,
+      "vdd_v": 5.0
+    },
+    {
+      "cb_pf": 550.0,
+      "cb_within_mode": 0,
+      "e12_choices": [],
+      "feasible": 0,
+      "margin_ohm": -889.5756054366994,
+      "mode": "fast",
+      "rp_max_ohm": 643.7577278966338,
+      "rp_min_ohm": 1533.3333333333333,
+      "vdd_v": 5.0
+    },
+    {
+      "cb_pf": 100.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        270.0,
+        330.0,
+        390.0,
+        470.0,
+        560.0,
+        680.0,
+        819.9999999999999,
+        1000.0,
+        1200.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 1186.2670013725942,
+      "mode": "fmplus",
+      "rp_max_ohm": 1416.2670013725942,
+      "rp_min_ohm": 229.99999999999997,
+      "vdd_v": 5.0
+    },
+    {
+      "cb_pf": 200.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        270.0,
+        330.0,
+        390.0,
+        470.0,
+        560.0,
+        680.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 478.1335006862971,
+      "mode": "fmplus",
+      "rp_max_ohm": 708.1335006862971,
+      "rp_min_ohm": 229.99999999999997,
+      "vdd_v": 5.0
+    },
+    {
+      "cb_pf": 400.0,
+      "cb_within_mode": 1,
+      "e12_choices": [
+        270.0,
+        330.0
+      ],
+      "feasible": 1,
+      "margin_ohm": 124.06675034314858,
+      "mode": "fmplus",
+      "rp_max_ohm": 354.06675034314856,
+      "rp_min_ohm": 229.99999999999997,
+      "vdd_v": 5.0
+    },
+    {
+      "cb_pf": 550.0,
+      "cb_within_mode": 1,
+      "e12_choices": [],
+      "feasible": 1,
+      "margin_ohm": 27.50309115865352,
+      "mode": "fmplus",
+      "rp_max_ohm": 257.5030911586535,
+      "rp_min_ohm": 229.99999999999997,
+      "vdd_v": 5.0
+    }
+  ]
+}

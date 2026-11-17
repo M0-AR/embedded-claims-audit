@@ -1,0 +1,50 @@
+name: Claim challenge
+description: Challenge a verdict, a number, or an artifact path.
+title: "claim: "
+labels: ["claim"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A useful challenge names the claim, the value you expected, and the
+        evidence or calculation that supports your reading.
+  - type: input
+    id: claim-id
+    attributes:
+      label: Claim ID
+      description: C01–C22, or the experiment ID if the issue is about E1–E10.
+      placeholder: C12
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current value and verdict
+      description: Quote the registry entry and the artifact path it uses.
+      placeholder: |
+        Observed: infeasible
+        Verdict: refuted
+        Path: e06_i2c.cases.fast_3v3_400pf.feasible
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: State the value and the operating point that produces it.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Link a datasheet section, show the calculation, or paste a failing test.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Does this change the verdict or only the explanation?
+      description: Say whether the claim should remain supported, qualified, or refuted.
+    validations:
+      required: false

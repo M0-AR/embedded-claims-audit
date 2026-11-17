@@ -1,0 +1,385 @@
+{
+  "analytic": {
+    "identity_mean": "pi*(sqrt(3)-3/2)/(3*sqrt(3))",
+    "identity_peak": "1 - sqrt(3)/2",
+    "sine_120_pct_of_mean": 14.029786907948877,
+    "sine_120_pct_of_peak": 13.397459621556141,
+    "trapezoid_120_pct_of_peak": 0.0
+  },
+  "cases": {
+    "sine_emf_120_blocks": {
+      "max": 1.7320508075688772,
+      "mean": 1.653986686230184,
+      "min": 1.5000000000000002,
+      "normalized_to_mean": 0.14029786908247377,
+      "normalized_to_peak": 0.13397459621556118,
+      "pct_of_mean": 14.029786908247376,
+      "pct_of_peak": 13.397459621556116,
+      "peak_to_peak": 0.23205080756887697
+    },
+    "sine_emf_sine_current": {
+      "max": 1.5000000000000009,
+      "mean": 1.5,
+      "min": 1.4999999999999991,
+      "normalized_to_mean": 1.1842378929335002e-15,
+      "normalized_to_peak": 1.1842378929334997e-15,
+      "pct_of_mean": 1.1842378929335004e-13,
+      "pct_of_peak": 1.1842378929334996e-13,
+      "peak_to_peak": 1.7763568394002505e-15
+    },
+    "trapezoid_emf_120_blocks": {
+      "max": 2.0,
+      "mean": 2.0,
+      "min": 2.0,
+      "normalized_to_mean": 0.0,
+      "normalized_to_peak": 0.0,
+      "pct_of_mean": 0.0,
+      "pct_of_peak": 0.0,
+      "peak_to_peak": 0.0
+    },
+    "trapezoid_emf_sine_current": {
+      "max": 1.7320508075688772,
+      "mean": 1.579440941597517,
+      "min": 1.4978510806446759,
+      "normalized_to_mean": 0.14828014188825653,
+      "normalized_to_peak": 0.1352152753838245,
+      "pct_of_mean": 14.828014188825653,
+      "pct_of_peak": 13.521527538382449,
+      "peak_to_peak": 0.23419972692420132
+    }
+  },
+  "experiment": "e01_sixstep",
+  "hidden_pattern": "13.4% and 14.0% are the same physical ripple normalized to peak and to mean; they describe a sinusoidal-EMF machine driven with 120-degree blocks. With an ideal trapezoidal EMF aligned to the blocks the ripple is zero. The number is a property of the EMF/current pair, not of six-step commutation as such.",
+  "misalignment": {
+    "at_plus_15_deg": {
+      "delta_deg": 15.000000000000002,
+      "pct_of_mean": 31.752393875239207,
+      "pct_of_peak": 29.28819200681278
+    },
+    "at_plus_30_deg": {
+      "delta_deg": 29.999999999999996,
+      "pct_of_mean": 60.45802662677679,
+      "pct_of_peak": 49.99861618728825
+    },
+    "best": {
+      "delta_deg": 0.0,
+      "pct_of_mean": 14.029786908247376,
+      "pct_of_peak": 13.397459621556116
+    },
+    "sweep": [
+      {
+        "delta_deg": -29.999999999999996,
+        "pct_of_mean": 60.46025768052015,
+        "pct_of_peak": 49.99999999361682
+      },
+      {
+        "delta_deg": -28.999999999999996,
+        "pct_of_mean": 58.06402124781648,
+        "pct_of_peak": 48.495188091705295
+      },
+      {
+        "delta_deg": -27.999999999999996,
+        "pct_of_mean": 55.75199666747504,
+        "pct_of_peak": 47.00744120131899
+      },
+      {
+        "delta_deg": -26.999999999999996,
+        "pct_of_mean": 53.51826642071881,
+        "pct_of_peak": 45.53582847699655
+      },
+      {
+        "delta_deg": -26.0,
+        "pct_of_mean": 51.35743917578628,
+        "pct_of_peak": 44.07947325720506
+      },
+      {
+        "delta_deg": -24.999999999999996,
+        "pct_of_mean": 49.27023970435556,
+        "pct_of_peak": 42.64148375460937
+      },
+      {
+        "delta_deg": -23.999999999999996,
+        "pct_of_mean": 47.25163514381368,
+        "pct_of_peak": 41.22095768173398
+      },
+      {
+        "delta_deg": -22.999999999999996,
+        "pct_of_mean": 45.29879297318413,
+        "pct_of_peak": 39.818327533330546
+      },
+      {
+        "delta_deg": -22.0,
+        "pct_of_mean": 43.407354374685944,
+        "pct_of_peak": 38.43276120155743
+      },
+      {
+        "delta_deg": -20.999999999999996,
+        "pct_of_mean": 41.57828583763094,
+        "pct_of_peak": 37.067215818549656
+      },
+      {
+        "delta_deg": -19.999999999999996,
+        "pct_of_mean": 39.80748831472613,
+        "pct_of_peak": 35.72083101230702
+      },
+      {
+        "delta_deg": -18.999999999999996,
+        "pct_of_mean": 38.09276398307547,
+        "pct_of_peak": 34.394016704458984
+      },
+      {
+        "delta_deg": -17.999999999999996,
+        "pct_of_mean": 36.430551196150404,
+        "pct_of_peak": 33.08598939467722
+      },
+      {
+        "delta_deg": -17.0,
+        "pct_of_mean": 34.8219493304868,
+        "pct_of_peak": 31.7995407281559
+      },
+      {
+        "delta_deg": -15.999999999999996,
+        "pct_of_mean": 33.263588898004336,
+        "pct_of_peak": 30.533856439888204
+      },
+      {
+        "delta_deg": -14.999999999999998,
+        "pct_of_mean": 31.75375476833732,
+        "pct_of_peak": 29.289321881345234
+      },
+      {
+        "delta_deg": -13.999999999999998,
+        "pct_of_mean": 30.289515717622965,
+        "pct_of_peak": 28.06520597673054
+      },
+      {
+        "delta_deg": -12.999999999999996,
+        "pct_of_mean": 28.872033839624745,
+        "pct_of_peak": 26.864121284097394
+      },
+      {
+        "delta_deg": -11.999999999999998,
+        "pct_of_mean": 27.498523158681987,
+        "pct_of_peak": 25.685303612328664
+      },
+      {
+        "delta_deg": -10.999999999999996,
+        "pct_of_mean": 26.166444814365633,
+        "pct_of_peak": 24.528063559223767
+      },
+      {
+        "delta_deg": -9.999999999999998,
+        "pct_of_mean": 24.87697725134558,
+        "pct_of_peak": 23.39487095366817
+      },
+      {
+        "delta_deg": -8.999999999999996,
+        "pct_of_mean": 23.62770124131128,
+        "pct_of_peak": 22.285001620311455
+      },
+      {
+        "delta_deg": -7.999999999999998,
+        "pct_of_mean": 22.417508542912504,
+        "pct_of_peak": 21.198793471051793
+      },
+      {
+        "delta_deg": -6.999999999999997,
+        "pct_of_mean": 21.244303982005775,
+        "pct_of_peak": 20.13561558314521
+      },
+      {
+        "delta_deg": -5.999999999999996,
+        "pct_of_mean": 20.109260730980857,
+        "pct_of_peak": 19.097737034170656
+      },
+      {
+        "delta_deg": -4.999999999999997,
+        "pct_of_mean": 19.010378354161816,
+        "pct_of_peak": 18.084490066973277
+      },
+      {
+        "delta_deg": -3.999999999999996,
+        "pct_of_mean": 17.94680734581444,
+        "pct_of_peak": 17.09618317571157
+      },
+      {
+        "delta_deg": -2.999999999999998,
+        "pct_of_mean": 16.916829226459036,
+        "pct_of_peak": 16.13224699079655
+      },
+      {
+        "delta_deg": -1.9999999999999964,
+        "pct_of_mean": 15.921591953306292,
+        "pct_of_peak": 15.194738784119995
+      },
+      {
+        "delta_deg": -0.999999999999995,
+        "pct_of_mean": 14.959454846451774,
+        "pct_of_peak": 14.283050469869147
+      },
+      {
+        "delta_deg": 0.0,
+        "pct_of_mean": 14.029786908247376,
+        "pct_of_peak": 13.397459621556116
+      },
+      {
+        "delta_deg": 1.0000000000000013,
+        "pct_of_mean": 14.959454846451804,
+        "pct_of_peak": 14.283050469869174
+      },
+      {
+        "delta_deg": 2.0000000000000027,
+        "pct_of_mean": 15.92159195330632,
+        "pct_of_peak": 15.19473878412002
+      },
+      {
+        "delta_deg": 3.0000000000000044,
+        "pct_of_mean": 16.91682922645908,
+        "pct_of_peak": 16.132246990796588
+      },
+      {
+        "delta_deg": 4.000000000000005,
+        "pct_of_mean": 17.946807345814467,
+        "pct_of_peak": 17.096183175711595
+      },
+      {
+        "delta_deg": 5.000000000000001,
+        "pct_of_mean": 19.010378354161855,
+        "pct_of_peak": 18.084490066973316
+      },
+      {
+        "delta_deg": 6.000000000000002,
+        "pct_of_mean": 20.109260730980882,
+        "pct_of_peak": 19.09773703417068
+      },
+      {
+        "delta_deg": 7.0000000000000036,
+        "pct_of_mean": 21.244303982005807,
+        "pct_of_peak": 20.13561558314524
+      },
+      {
+        "delta_deg": 8.000000000000005,
+        "pct_of_mean": 22.4175085429125,
+        "pct_of_peak": 21.198793471051793
+      },
+      {
+        "delta_deg": 9.0,
+        "pct_of_mean": 23.627701241311293,
+        "pct_of_peak": 22.285001620311466
+      },
+      {
+        "delta_deg": 10.000000000000002,
+        "pct_of_mean": 24.876977251345593,
+        "pct_of_peak": 23.394870953668185
+      },
+      {
+        "delta_deg": 11.000000000000004,
+        "pct_of_mean": 26.166444814365644,
+        "pct_of_peak": 24.52806355922378
+      },
+      {
+        "delta_deg": 12.000000000000004,
+        "pct_of_mean": 27.49852315868198,
+        "pct_of_peak": 25.685303612328664
+      },
+      {
+        "delta_deg": 13.000000000000005,
+        "pct_of_mean": 28.87203383962476,
+        "pct_of_peak": 26.864121284097404
+      },
+      {
+        "delta_deg": 14.0,
+        "pct_of_mean": 30.289515717622972,
+        "pct_of_peak": 28.06520597673055
+      },
+      {
+        "delta_deg": 15.000000000000002,
+        "pct_of_mean": 31.752393875239207,
+        "pct_of_peak": 29.28819200681278
+      },
+      {
+        "delta_deg": 16.000000000000004,
+        "pct_of_mean": 33.26358889800437,
+        "pct_of_peak": 30.53385643988823
+      },
+      {
+        "delta_deg": 17.000000000000004,
+        "pct_of_mean": 34.821949330486845,
+        "pct_of_peak": 31.79954072815594
+      },
+      {
+        "delta_deg": 18.000000000000007,
+        "pct_of_mean": 36.43055119615043,
+        "pct_of_peak": 33.08598939467724
+      },
+      {
+        "delta_deg": 19.0,
+        "pct_of_mean": 38.09276398307546,
+        "pct_of_peak": 34.39401670445897
+      },
+      {
+        "delta_deg": 20.000000000000004,
+        "pct_of_mean": 39.807488314726136,
+        "pct_of_peak": 35.72083101230702
+      },
+      {
+        "delta_deg": 21.000000000000004,
+        "pct_of_mean": 41.578285837630936,
+        "pct_of_peak": 37.067215818549656
+      },
+      {
+        "delta_deg": 22.000000000000007,
+        "pct_of_mean": 43.40735437468594,
+        "pct_of_peak": 38.43276120155743
+      },
+      {
+        "delta_deg": 23.0,
+        "pct_of_mean": 45.29879297318413,
+        "pct_of_peak": 39.818327533330546
+      },
+      {
+        "delta_deg": 24.000000000000004,
+        "pct_of_mean": 47.25163514381368,
+        "pct_of_peak": 41.220957681733985
+      },
+      {
+        "delta_deg": 25.000000000000004,
+        "pct_of_mean": 49.270239704355575,
+        "pct_of_peak": 42.641483754609375
+      },
+      {
+        "delta_deg": 26.000000000000004,
+        "pct_of_mean": 51.35743917578631,
+        "pct_of_peak": 44.07947325720507
+      },
+      {
+        "delta_deg": 27.000000000000007,
+        "pct_of_mean": 53.51826642071887,
+        "pct_of_peak": 45.535828476996585
+      },
+      {
+        "delta_deg": 28.000000000000007,
+        "pct_of_mean": 55.75199666747508,
+        "pct_of_peak": 47.007441201319025
+      },
+      {
+        "delta_deg": 29.00000000000001,
+        "pct_of_mean": 58.06402124781652,
+        "pct_of_peak": 48.49518809170533
+      },
+      {
+        "delta_deg": 29.999999999999996,
+        "pct_of_mean": 60.45802662677679,
+        "pct_of_peak": 49.99861618728825
+      }
+    ]
+  },
+  "parameters": {
+    "commutation_pairs_per_revolution": 6,
+    "conduction_angle_deg": 120.0,
+    "samples_per_electrical_revolution": 131072,
+    "sine_block_shift_deg": 30.0
+  },
+  "sampling_error_pp": 2.4868995751603507e-14,
+  "title": "Six-step torque ripple: 13.4% is the sinusoidal-EMF number"
+}

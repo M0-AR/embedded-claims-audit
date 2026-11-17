@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live Console Preview — Embedded Claims Audit</title>
+<meta name="description" content="Explore the real Embedded Claims Audit console: 22 claims, 10 executable experiments, live calculators, and a 3D concept game. Every number is resolved from executed artifacts.">
+<link rel="canonical" href="https://m0-ar.github.io/embedded-claims-audit/preview.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Live Console Preview — Embedded Claims Audit">
+<meta property="og:description" content="22 audited engineering claims, 10 executable experiments, and 34,650 verified fields. Explore the real console, not a screenshot.">
+<meta property="og:url" content="https://m0-ar.github.io/embedded-claims-audit/preview.html">
+<meta property="og:image" content="https://m0-ar.github.io/embedded-claims-audit/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Live Console Preview — Embedded Claims Audit">
+<meta name="twitter:description" content="22 audited engineering claims, 10 executable experiments, and 34,650 verified fields.">
+<meta name="twitter:image" content="https://m0-ar.github.io/embedded-claims-audit/assets/og-image.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1416'/%3E%3Ccircle cx='32' cy='32' r='18' fill='none' stroke='%23f2b544' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%2357d6c7'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap site-head-inner">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>Embedded Claims Audit<small>Conventions, not constants</small></span></a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="index.html">Overview</a>
+      <a href="preview.html" aria-current="page">Live console</a>
+      <a href="https://github.com/M0-AR/embedded-claims-audit/blob/main/README.md">Paper</a>
+      <a href="https://github.com/M0-AR/embedded-claims-audit" rel="noopener">GitHub</a>
+      <a class="cta" href="demo/app.html" rel="noopener">Open console</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <section class="hero preview-section" aria-labelledby="preview-title">
+      <p class="preview-note">Live, not a mockup</p>
+      <h1 id="preview-title">The audit, running in your browser.</h1>
+      <p class="lede">Each tab below loads the actual console in an iframe. Open a claim, change an operating point in a lab, or start the 3D mission. Nothing here is a screenshot of an interface that does not exist.</p>
+    </section>
+
+    <section aria-labelledby="tabs-title">
+      <h2 id="tabs-title" class="sr-only">Console views</h2>
+      <div class="tablist" role="tablist" aria-label="Console views">
+        <button class="tab" role="tab" id="tab-overview" aria-controls="panel-overview" aria-selected="true" tabindex="0" data-route="overview"><span class="dot" aria-hidden="true"></span>Overview</button>
+        <button class="tab" role="tab" id="tab-claims" aria-controls="panel-claims" aria-selected="false" tabindex="-1" data-route="claims"><span class="dot" aria-hidden="true"></span>Claims</button>
+        <button class="tab" role="tab" id="tab-experiments" aria-controls="panel-experiments" aria-selected="false" tabindex="-1" data-route="experiments"><span class="dot" aria-hidden="true"></span>Experiments</button>
+        <button class="tab" role="tab" id="tab-lab" aria-controls="panel-lab" aria-selected="false" tabindex="-1" data-route="lab"><span class="dot" aria-hidden="true"></span>Lab</button>
+        <button class="tab" role="tab" id="tab-game" aria-controls="panel-game" aria-selected="false" tabindex="-1" data-route="game"><span class="dot" aria-hidden="true"></span>Game</button>
+      </div>
+
+      <div class="browser">
+        <div class="browser-bar">
+          <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="url-bar" aria-label="Demo address"><span class="lock" aria-hidden="true">&#x1F512;</span><strong>m0-ar.github.io</strong><span id="urlPath">/embedded-claims-audit/demo/app.html#/overview</span></div>
+          <div class="browser-actions">
+            <a class="btn small" id="openFull" href="demo/app.html#/overview" target="_blank" rel="noopener">Open full screen <span aria-hidden="true">&#x2197;</span></a>
+          </div>
+        </div>
+
+        <div class="stage" id="stage">
+          <div class="panel" role="tabpanel" id="panel-overview" aria-labelledby="tab-overview" tabindex="0" data-route="overview"></div>
+          <div class="panel" role="tabpanel" id="panel-claims" aria-labelledby="tab-claims" tabindex="0" data-route="claims" hidden></div>
+          <div class="panel" role="tabpanel" id="panel-experiments" aria-labelledby="tab-experiments" tabindex="0" data-route="experiments" hidden></div>
+          <div class="panel" role="tabpanel" id="panel-lab" aria-labelledby="tab-lab" tabindex="0" data-route="lab" hidden></div>
+          <div class="panel" role="tabpanel" id="panel-game" aria-labelledby="tab-game" tabindex="0" data-route="game" hidden></div>
+          <div class="poster" id="poster">
+            <img src="assets/console-overview.png" alt="The Embedded Claims Audit console overview, showing claim verdicts and verification status" width="1440" height="900">
+            <div class="poster-cta">
+              <button class="play" id="launch" type="button"><span aria-hidden="true">&#x25B6;</span> Launch interactive demo</button>
+              <small>Loads the real Overview console in this frame. Keyboard: use the arrow keys to move between tabs.</small>
+            </div>
+          </div>
+          <noscript><div class="poster-cta"><p>The live preview needs JavaScript. <a href="demo/app.html">Open the console directly</a>.</p></div></noscript>
+        </div>
+
+        <div class="stage-caption">
+          <span><strong id="captionLabel">Overview</strong> — <span id="captionText">the executive view: verdict counts, verification status, and the five failure patterns.</span></span>
+          <a href="demo/app.html" target="_blank" rel="noopener">Open the console in a new tab</a>
+        </div>
+      </div>
+
+      <div class="browse-all" aria-label="Browse all pages">
+        <span>Browse all pages</span>
+        <a class="chip" href="index.html">Landing page</a>
+        <a class="chip" href="demo/app.html#/claims">Claim registry</a>
+        <a class="chip" href="https://github.com/M0-AR/embedded-claims-audit/blob/main/README.md">Teaching paper</a>
+        <a class="chip" href="results/results.json">Results artifact</a>
+        <a class="chip" href="https://github.com/M0-AR/embedded-claims-audit/releases" rel="noopener">Releases</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="why-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Why an iframe</p>
+          <h2 id="why-title">The console keeps its own state.</h2>
+          <p>The real application owns its route, theme, saved game progress, and calculators. Loading it directly means what you try here behaves exactly like the standalone tool, including the parts a static screenshot cannot show.</p>
+        </div>
+      </div>
+      <div class="grid-3">
+        <article class="card"><h3>Executable evidence</h3><p>Every claim drawer resolves a path into <code>results/results.json</code>. The verification modal compares 34,650 fields with zero relative difference.</p><a class="more" href="demo/app.html#/claims">Open the claim registry</a></article>
+        <article class="card"><h3>Operating points, not slogans</h3><p>The lab recalculates I2C rise time, RS-485 failsafe margin, trace width, Kt convention, M/T crossover, and half-bridge ripple.</p><a class="more" href="demo/app.html#/lab">Try the labs</a></article>
+        <article class="card"><h3>A concept game with a source of truth</h3><p>Six missions tie a 3D motor twin and a 22-node claim brain to the audit. Unlock evidence by tuning real operating points.</p><a class="more" href="demo/app.html#/game">Start the game</a></article>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap site-foot-inner">
+    <span>Embedded Claims Audit v1.0.0 · MIT · Dataset CC BY-SA 4.0</span>
+    <nav aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="https://github.com/M0-AR/embedded-claims-audit/blob/main/README.md">Paper</a>
+      <a href="https://github.com/M0-AR/embedded-claims-audit" rel="noopener">GitHub</a>
+      <a href="https://github.com/M0-AR/embedded-claims-audit/releases" rel="noopener">Releases</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
+  const panels = Array.from(document.querySelectorAll('[role="tabpanel"]'));
+  const poster = document.getElementById('poster');
+  const urlPath = document.getElementById('urlPath');
+  const openFull = document.getElementById('openFull');
+  const captionLabel = document.getElementById('captionLabel');
+  const captionText = document.getElementById('captionText');
+  const copy = {
+    overview: ['Overview', 'the executive view: verdict counts, verification status, and the five failure patterns.'],
+    claims: ['Claims', 'the searchable registry of 22 statements, each with an observed value and a path into the artifact.'],
+    experiments: ['Experiments', 'ten executable studies with charts, parameters, hidden patterns, and linked claims.'],
+    lab: ['Lab', 'six calculators that move with your inputs: I2C, RS-485, IPC-2221/2152, Kt, M/T, and half-bridge ripple.'],
+    game: ['Game', 'six missions that unlock the claim brain by tuning a 3D PMSM digital twin.']
+  };
+  let active = null;
+  let started = false;
+
+  function select(tab, focus) {
+    const route = tab.dataset.route;
+    active = route;
+    tabs.forEach((item) => {
+      const on = item === tab;
+      item.setAttribute('aria-selected', String(on));
+      item.tabIndex = on ? 0 : -1;
+    });
+    panels.forEach((panel) => {
+      const on = panel.dataset.route === route;
+      panel.hidden = !on;
+      if (!on) {
+        const frame = panel.querySelector('iframe');
+        if (frame) frame.remove();
+      }
+    });
+    const panel = document.getElementById(`panel-${route}`);
+    if (started && !panel.querySelector('iframe')) {
+      const frame = document.createElement('iframe');
+      frame.src = `demo/app.html?embed=1#/${route}`;
+      frame.title = `${copy[route][0]} view of the Embedded Claims Audit console`;
+      frame.loading = 'eager';
+      frame.allow = 'fullscreen';
+      panel.appendChild(frame);
+    }
+    if (started) poster.hidden = true;
+    urlPath.textContent = `/embedded-claims-audit/demo/app.html#/${route}`;
+    openFull.href = `demo/app.html#/${route}`;
+    openFull.setAttribute('aria-label', `Open the ${copy[route][0]} view full screen in a new tab`);
+    captionLabel.textContent = copy[route][0];
+    captionText.textContent = copy[route][1];
+    if (focus) tab.focus();
+  }
+
+  function launch() {
+    started = true;
+    select(document.getElementById(`tab-${active || 'overview'}`), false);
+    const panel = document.getElementById(`panel-${active || 'overview'}`);
+    panel.focus({ preventScroll: true });
+  }
+
+  tabs.forEach((tab) => tab.addEventListener('click', () => select(tab, false)));
+  document.getElementById('launch').addEventListener('click', launch);
+
+  document.querySelector('[role="tablist"]').addEventListener('keydown', (event) => {
+    const index = tabs.indexOf(document.activeElement);
+    if (index < 0) return;
+    let next = index;
+    if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+    else if (event.key === 'ArrowLeft') next = (index - 1 + tabs.length) % tabs.length;
+    else if (event.key === 'Home') next = 0;
+    else if (event.key === 'End') next = tabs.length - 1;
+    else return;
+    event.preventDefault();
+    select(tabs[next], true);
+  });
+
+  select(tabs[0], false);
+})();
+</script>
+</body>
+</html>

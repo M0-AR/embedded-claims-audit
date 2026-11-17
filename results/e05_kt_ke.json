@@ -1,0 +1,42 @@
+{
+  "at_85a": {
+    "e_phase_peak_v": 2.1383343303319475,
+    "omega_rad_s": 104.71975511965977,
+    "p_elec_w": 272.63762711732335,
+    "p_mech_w": 272.6376271173233,
+    "power_balance_error_pct": 2.220446049250313e-14,
+    "speed_rpm": 1000.0,
+    "torque_45a_nm": 1.3783222385544802,
+    "torque_nm": 2.6034975617140184
+  },
+  "comparison": {
+    "datasheet_vs_foc_pct": 1.210004524269337,
+    "kt_dc_vs_foc_pct": 15.470053837925146,
+    "kt_foc_vs_dc_pct": -13.397459621556141,
+    "ratio_dc_to_foc": 1.1547005383792515,
+    "ratio_rms_to_foc": 1.4142135623730951,
+    "rms_vs_foc_pct": 41.42135623730952
+  },
+  "constants": {
+    "dc_rule_per_kv": 9.549296585513721,
+    "foc_rule_per_kv": 8.26993343132688,
+    "ke_ll_v_s_per_rad": 0.0353677651315323,
+    "ke_phase_peak_v_s_per_rad": 0.020419588719325636,
+    "kt_dc_nm_per_a": 0.0353677651315323,
+    "kt_foc_peak_nm_per_a": 0.03062938307898845,
+    "kt_rms_nm_per_a": 0.04331648895742646,
+    "psi_mwb": 2.9170841027608048,
+    "psi_wb": 0.002917084102760805,
+    "rms_rule_per_kv": 11.69545201850514
+  },
+  "experiment": "e05_kt_ke",
+  "hidden_pattern": "Kt and Ke are numerically equal only in the 120-degree DC convention. For a sinusoidal PMSM with peak phase current the torque constant is smaller by 2/sqrt(3)=15.47%, and for RMS current it is larger by sqrt(2). The ODrive footnote (line-line amplitude, phase amplitude) selects the 2/sqrt(3) convention; applying 9.5493/Kv overstates torque by 15.47%.",
+  "parameters": {
+    "datasheet_current_convention": "phase amplitude",
+    "datasheet_kt_nm_per_a": 0.031,
+    "datasheet_voltage_convention": "line-line amplitude",
+    "kv_rpm_per_v": 270.0,
+    "pole_pairs": 7
+  },
+  "title": "Kt = Ke only after choosing a current and EMF convention"
+}

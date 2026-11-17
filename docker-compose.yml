@@ -1,0 +1,11 @@
+services:
+  audit:
+    build: .
+    image: embedded-claims-audit:1.0.0
+    environment:
+      MPLBACKEND: Agg
+      PYTHONPATH: /app/src
+    volumes:
+      - ./results:/app/results
+      - ./data:/app/data
+    command: make all

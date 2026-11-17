@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite it as below."
+title: "Conventions, Not Constants: A Reproducible Audit of Quantitative Claims in Practical Motor-Drive and Embedded-Systems Education"
+type: software
+authors:
+  - name: "Embedded Claims Audit Project"
+version: 1.0.0
+date-released: "2026-11-17"
+license: MIT
+repository-code: "https://github.com/M0-AR/embedded-claims-audit"
+url: "https://m0-ar.github.io/embedded-claims-audit/"
+abstract: >-
+  A claim-audit protocol and ten executable experiments that test widely taught
+  quantitative rules in motor drives, embedded buses, and PCB design against
+  closed-form mathematics, switching-level simulation, commercial datasheets,
+  and a public PMSM measurement dataset.
+keywords:
+  - reproducibility
+  - motor drives
+  - BLDC
+  - PMSM
+  - SVPWM
+  - dead time
+  - embedded systems
+  - PCB

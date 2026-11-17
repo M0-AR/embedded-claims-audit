@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Embedded Claims Audit — Live Console</title>
+<meta name="description" content="Explore 22 audited engineering claims, 10 executable experiments, live calculators, and a 3D concept game. Every number comes from executed artifacts.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1416'/%3E%3Ccircle cx='32' cy='32' r='18' fill='none' stroke='%23f2b544' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%2357d6c7'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="app.css?v=3">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar" aria-label="Console navigation">
+    <a class="brand" href="#/overview" aria-label="Embedded Claims Audit home">
+      <span class="brand-mark" aria-hidden="true"><span></span></span>
+      <span class="brand-text"><strong>ECA</strong><small>Audit Console</small></span>
+    </a>
+    <nav class="side-nav" aria-label="Sections">
+      <button class="nav-item" data-route="overview"><span class="nav-icon" aria-hidden="true">◈</span><span>Overview</span></button>
+      <button class="nav-item" data-route="claims"><span class="nav-icon" aria-hidden="true">✓</span><span>Claims</span><span class="nav-count" id="navClaims">22</span></button>
+      <button class="nav-item" data-route="experiments"><span class="nav-icon" aria-hidden="true">⌁</span><span>Experiments</span><span class="nav-count">10</span></button>
+      <button class="nav-item" data-route="lab"><span class="nav-icon" aria-hidden="true">⚙</span><span>Interactive lab</span></button>
+      <button class="nav-item" data-route="game"><span class="nav-icon" aria-hidden="true">◉</span><span>3D concept game</span><span class="nav-live">LIVE</span></button>
+      <button class="nav-item" data-route="guide"><span class="nav-icon" aria-hidden="true">☰</span><span>Field guide</span></button>
+    </nav>
+    <div class="side-card">
+      <div class="side-card-head"><span class="status-dot"></span><span>Artifact verified</span></div>
+      <div class="side-metric" id="sideFields">34,650 fields</div>
+      <div class="side-sub" id="sideDiff">max difference 0.000e+0</div>
+      <button class="text-btn" id="verifyInfo">How verification works</button>
+    </div>
+    <div class="side-foot">
+      <span>v1.0.0</span><span>MIT</span><a href="https://github.com/M0-AR/embedded-claims-audit/blob/main/README.md">Paper</a>
+    </div>
+  </aside>
+
+  <div class="workspace">
+    <header class="topbar">
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">☰</button>
+      <div class="crumb"><span class="crumb-root">Audit</span><span aria-hidden="true">/</span><span id="crumb">Overview</span></div>
+      <div class="search-wrap">
+        <label class="sr-only" for="globalSearch">Search claims, experiments, and terms</label>
+        <input id="globalSearch" type="search" placeholder="Search claims, experiments, terms…" autocomplete="off" spellcheck="false">
+        <kbd>/</kbd>
+        <div class="search-results" id="searchResults" hidden></div>
+      </div>
+      <a class="top-link" href="../preview.html">Live site</a>
+      <a class="top-link" id="repoLink" href="https://github.com/M0-AR/embedded-claims-audit" rel="noopener">GitHub</a>
+      <button class="icon-btn" id="themeBtn" aria-label="Switch color theme">◐</button>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="page" data-page="overview">
+        <div class="page-head">
+          <div>
+            <p class="eyebrow">Executive view</p>
+            <h1>One audit. 22 claims. Zero hand-typed results.</h1>
+            <p class="lede">A working instrument for checking the numbers that travel through motor-drive and embedded-systems education. Open a claim, change an operating point, and watch the evidence respond.</p>
+          </div>
+          <div class="head-actions">
+            <button class="btn primary" data-go="claims">Explore the claims</button>
+            <button class="btn" data-go="game">Play the 3D game</button>
+          </div>
+        </div>
+
+        <div class="kpi-row" id="kpiRow"></div>
+
+        <div class="grid two-one">
+          <article class="card verdict-card">
+            <div class="card-head"><div><p class="eyebrow">Verdict distribution</p><h2>What survived the audit</h2></div><span class="pill" id="claimsPill">22 claims</span></div>
+            <div class="verdict-layout">
+              <div class="donut-wrap"><canvas id="verdictDonut" aria-label="Verdict distribution: 10 supported, 5 qualified, 7 refuted"></canvas><div class="donut-center"><strong id="donutTotal">22</strong><span>claims</span></div></div>
+              <div class="legend" id="verdictLegend"></div>
+            </div>
+            <p class="fine">A qualified verdict means the number is right under a convention or operating point the source omitted. A refuted verdict means it fails under the conditions the source implies.</p>
+          </article>
+          <article class="card">
+            <div class="card-head"><div><p class="eyebrow">Fast path</p><h2>Start with one idea</h2></div></div>
+            <ol class="start-list">
+              <li><button class="text-link" data-go="claims">Pick a claim</button><span>Read the sentence, the observed value, and the missing condition.</span></li>
+              <li><button class="text-link" data-go="experiments">Open its experiment</button><span>See the executable model and the key numbers.</span></li>
+              <li><button class="text-link" data-go="lab">Change the operating point</button><span>Use the calculators to break the formula yourself.</span></li>
+              <li><button class="text-link" data-go="game">Play the concept game</button><span>Rebuild the reasoning in 3D, one mission at a time.</span></li>
+            </ol>
+          </article>
+        </div>
+
+        <div class="section-head"><div><p class="eyebrow">Findings</p><h2>The five failure patterns</h2></div><button class="text-link" data-go="guide">Read the field guide →</button></div>
+        <div class="pattern-grid" id="patternGrid"></div>
+
+        <div class="grid two-one">
+          <article class="card">
+            <div class="card-head"><div><p class="eyebrow">Evidence map</p><h2>How each claim is tested</h2></div><button class="text-link" data-go="experiments">All experiments →</button></div>
+            <div class="evidence-map" id="evidenceMap"></div>
+          </article>
+          <article class="card">
+            <div class="card-head"><div><p class="eyebrow">Live artifact</p><h2>Verification status</h2></div><span class="status-pill" id="verifyPill">verified</span></div>
+            <div class="verify-block">
+              <div class="verify-row"><span>Scalar fields compared</span><strong id="verifyFields">34,650</strong></div>
+              <div class="verify-row"><span>Maximum relative difference</span><strong id="verifyDiff">0.000e+0</strong></div>
+              <div class="verify-row"><span>Experiments checked</span><strong id="verifyExps">10</strong></div>
+              <div class="verify-row"><span>Real-data rows audited</span><strong id="verifyRows">1,330,816</strong></div>
+            </div>
+            <p class="fine">The console reads the same executed JSON artifacts as the paper. Verification re-runs every experiment and compares each field.</p>
+            <button class="btn wide" id="openVerify">Open the verification model</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="page" data-page="claims" hidden>
+        <div class="page-head">
+          <div><p class="eyebrow">Claim registry</p><h1>22 sentences that sound universal</h1><p class="lede">Each claim was transcribed, normalized, and tested at a stated operating point. Filter by verdict or experiment, then open the evidence.</p></div>
+          <div class="head-actions"><button class="btn" id="downloadClaims">Download JSON</button></div>
+        </div>
+        <div class="filter-bar">
+          <div class="seg" id="verdictFilter" role="group" aria-label="Filter by verdict">
+            <button class="seg-btn active" data-filter="all" aria-pressed="true">All <span>22</span></button>
+            <button class="seg-btn" data-filter="supported" aria-pressed="false">Supported <span>10</span></button>
+            <button class="seg-btn" data-filter="qualified" aria-pressed="false">Qualified <span>5</span></button>
+            <button class="seg-btn" data-filter="refuted" aria-pressed="false">Refuted <span>7</span></button>
+          </div>
+          <label class="select-wrap"><span class="sr-only">Filter by experiment</span><select id="experimentFilter"><option value="all">All experiments</option></select></label>
+          <label class="search-field"><span class="sr-only">Search claims</span><input id="claimSearch" type="search" placeholder="Search claims…"></label>
+        </div>
+        <div class="table-card">
+          <div class="table-meta"><span id="claimCount">22 claims</span><span class="fine">Click a row to open the evidence</span></div>
+          <div class="claim-table-wrap">
+            <table class="claim-table">
+              <thead><tr><th>ID</th><th>Claim</th><th>Exp.</th><th>Observed</th><th>Expected</th><th>Verdict</th><th><span class="sr-only">Open</span></th></tr></thead>
+              <tbody id="claimRows"></tbody>
+            </table>
+          </div>
+          <div class="empty" id="claimEmpty" hidden>No claims match those filters.</div>
+        </div>
+      </section>
+
+      <section class="page" data-page="experiments" hidden>
+        <div class="page-head">
+          <div><p class="eyebrow">Executable evidence</p><h1>Ten experiments, one artifact format</h1><p class="lede">Closed-form identities, switching-level simulation, commercial datasheets, and a 185-hour public PMSM dataset. Open a card for the mechanism and the numbers.</p></div>
+        </div>
+        <div class="experiment-grid" id="experimentGrid"></div>
+      </section>
+
+      <section class="page" data-page="lab" hidden>
+        <div class="page-head">
+          <div><p class="eyebrow">Interactive lab</p><h1>Break the formula yourself</h1><p class="lede">Six calculators built from the same equations as the experiments. Move a control and watch the operating point, the convention, or the hidden load change the answer.</p></div>
+        </div>
+        <div class="lab-grid" id="labGrid"></div>
+        <div class="callout"><strong>Why this matters:</strong> a calculator that returns one number hides the tuple. These calculators show the window, the pass/fail boundary, and the condition that the source sentence leaves out.</div>
+      </section>
+
+      <section class="page game-page" data-page="game" hidden>
+        <div class="page-head">
+          <div><p class="eyebrow">3D concept game</p><h1>Torque Trail: rebuild the audit</h1><p class="lede">Tune a virtual PMSM drive, hit each mission target, and watch a 3D concept network light up. Every mission maps to a real experiment; the voice explains the idea when a node comes online.</p></div>
+          <div class="head-actions"><button class="btn" id="gameHelp">How to play</button></div>
+        </div>
+        <div id="gameRoot"></div>
+      </section>
+
+      <section class="page" data-page="guide" hidden>
+        <div class="page-head">
+          <div><p class="eyebrow">Field guide</p><h1>From “sounds right” to “show me the artifact”</h1><p class="lede">A short path through the ideas, a glossary you can use in a design review, and a knowledge check that explains every answer.</p></div>
+        </div>
+        <div class="guide-layout">
+          <div class="guide-main">
+            <div class="module-list" id="moduleList"></div>
+            <article class="card quiz-card" id="quizCard">
+              <div class="card-head"><div><p class="eyebrow">Knowledge check</p><h2>Can you spot the missing condition?</h2></div><span class="pill" id="quizProgress">1 / 10</span></div>
+              <div id="quizBody"></div>
+            </article>
+          </div>
+          <aside class="guide-side">
+            <article class="card"><div class="card-head"><div><p class="eyebrow">Glossary</p><h2>Speak the language</h2></div></div><div class="glossary" id="glossary"></div></article>
+            <article class="card"><div class="card-head"><div><p class="eyebrow">Use it in a review</p><h2>Three questions</h2></div></div><ol class="review-list"><li>What is the denominator?</li><li>What is the operating point?</li><li>What load or convention is hidden?</li></ol><p class="fine">If the sentence cannot answer all three, it is not yet a result.</p></article>
+          </aside>
+        </div>
+      </section>
+
+      <footer class="app-footer">
+        <span>Embedded Claims Audit · v1.0.0</span>
+        <span>Code MIT · Data CC BY-SA 4.0</span>
+        <a href="https://github.com/M0-AR/embedded-claims-audit/blob/main/README.md">Read the paper</a>
+      </footer>
+    </main>
+  </div>
+</div>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-labelledby="drawerTitle" tabindex="-1">
+  <div class="drawer-head"><span class="eyebrow" id="drawerKind">Claim</span><button class="icon-btn" id="drawerClose" aria-label="Close details">×</button></div>
+  <div class="drawer-body" id="drawerBody"></div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="modal" id="verifyModal" hidden role="dialog" aria-modal="true" aria-labelledby="verifyTitle">
+  <div class="modal-card">
+    <div class="drawer-head"><span class="eyebrow">Reproducibility</span><button class="icon-btn" data-close-modal aria-label="Close">×</button></div>
+    <h2 id="verifyTitle">The verification loop</h2>
+    <p>Every experiment returns a JSON payload. <code>make verify</code> re-runs all ten experiments and compares the fresh payload with the stored artifact field by field.</p>
+    <div class="verify-code">$ make verify<br><span>ok e01_sixstep</span><br><span>ok e02_svpwm</span><br>…<br><strong>checked 10 experiment(s), 34,650 scalar field(s)</strong><br><strong>max relative difference 0.000e+00</strong></div>
+    <p class="fine">Numeric fields use a relative tolerance of 1e-6 (1e-5 for the real-data regression) and an absolute tolerance of 1e-9. Strings and booleans must match exactly. The Paderborn dataset is optional; E10 is skipped when it is absent.</p>
+    <button class="btn primary wide" data-close-modal>Got it</button>
+  </div>
+</div>
+<script src="data.js?v=2"></script>
+<script src="game.js?v=5"></script>
+<script src="app.js?v=9"></script>
+</body>
+</html>

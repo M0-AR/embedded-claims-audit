@@ -1,0 +1,242 @@
+{
+  "case_10a_10c": {
+    "chart_current_equivalent_factor": 1.9988381981988788,
+    "chart_over_2221_width": 2.5993556859004983,
+    "current_a": 10.0,
+    "dt_c": 10.0,
+    "fit_current_equivalent_factor": 1.720585498618477,
+    "fit_over_2221_width": 2.113833133765204,
+    "ipc2152_ext_chart_mm": 18.7,
+    "ipc2152_ext_fit_mm": 15.207106828750657,
+    "ipc2152_int_fit_mm": 13.25695813387985,
+    "ipc2221_ext_mm": 7.194090482281086,
+    "ipc2221_int_mm": 18.71499359829311,
+    "ipc2221_int_over_ext_area": 2.601439840712011,
+    "ratio_2152_int_over_ext": 0.8717607026220239,
+    "ratio_2152_over_2221_ext": 2.113833133765204,
+    "ratio_2152_over_2221_int": 0.7083602815172186,
+    "ratio_2221_int_over_ext": 2.6014398407120116
+  },
+  "experiment": "E8",
+  "hidden_pattern": "IPC-2221's internal-layer rule is not an independent measurement: its k is halved (0.024 vs 0.048), which is exactly the same as halving the current. For a fixed current and temperature rise the internal area is therefore 2^(1/0.725)=2.60 times the external area by construction. The IPC-2152 empirical fit does not reproduce that penalty; at 10 A, 10 C, 1 oz it predicts 13.3 mm internal versus 15.2 mm external. For external traces the same fit is 2.1 times wider than IPC-2221 at 10 A, and a 2026 chart reading is 2.6 times wider, so IPC-2221 is non-conservative at high current by roughly a factor of 1.7-2.0 in current. At 1 A the two methods nearly agree, which is why the discrepancy is invisible in low-current examples. The chart and the fit differ by 23% at the 10 A case, so the absolute width carries a fit-versus-chart uncertainty that the paper reports rather than hides.",
+  "resistance_50mm": [
+    {
+      "case": "ipc2221_ext",
+      "drop_v_at_10a": 0.03415501741595765,
+      "power_w_at_10a": 0.34155017415957656,
+      "r_50mm_mohm": 3.415501741595765,
+      "width_mm": 7.194090482281086
+    },
+    {
+      "case": "ipc2152_fit_ext",
+      "drop_v_at_10a": 0.016157858853844353,
+      "power_w_at_10a": 0.16157858853844353,
+      "r_50mm_mohm": 1.6157858853844353,
+      "width_mm": 15.207106828750657
+    },
+    {
+      "case": "ipc2152_chart_ext",
+      "drop_v_at_10a": 0.013139801375095492,
+      "power_w_at_10a": 0.13139801375095492,
+      "r_50mm_mohm": 1.3139801375095492,
+      "width_mm": 18.7
+    },
+    {
+      "case": "ipc2221_int",
+      "drop_v_at_10a": 0.01312927436623307,
+      "power_w_at_10a": 0.13129274366233068,
+      "r_50mm_mohm": 1.312927436623307,
+      "width_mm": 18.71499359829311
+    },
+    {
+      "case": "ipc2152_fit_int",
+      "drop_v_at_10a": 0.018534741019233626,
+      "power_w_at_10a": 0.18534741019233625,
+      "r_50mm_mohm": 1.8534741019233625,
+      "width_mm": 13.25695813387985
+    }
+  ],
+  "table": [
+    {
+      "current_a": 1.0,
+      "dt_c": 10.0,
+      "ipc2152_ext_fit_mm": 0.2772784783519532,
+      "ipc2152_int_fit_mm": 0.24841119125394753,
+      "ipc2221_ext_mm": 0.3003762222199717,
+      "ipc2221_int_mm": 0.781410671685599,
+      "ratio_2152_int_over_ext": 0.8958906321558645,
+      "ratio_2152_over_2221_ext": 0.9231039537773281,
+      "ratio_2152_over_2221_int": 0.31790094537369706,
+      "ratio_2221_int_over_ext": 2.6014398407120116
+    },
+    {
+      "current_a": 1.0,
+      "dt_c": 20.0,
+      "ipc2152_ext_fit_mm": 0.1517577742754263,
+      "ipc2152_int_fit_mm": 0.13228406288109162,
+      "ipc2221_ext_mm": 0.19722932328415424,
+      "ipc2221_int_mm": 0.513080219348068,
+      "ratio_2152_int_over_ext": 0.871678986547393,
+      "ratio_2152_over_2221_ext": 0.7694483342965401,
+      "ratio_2152_over_2221_int": 0.25782335372268866,
+      "ratio_2221_int_over_ext": 2.6014398407120116
+    },
+    {
+      "current_a": 1.0,
+      "dt_c": 30.0,
+      "ipc2152_ext_fit_mm": 0.10666651705984734,
+      "ipc2152_int_fit_mm": 0.09150073071061897,
+      "ipc2221_ext_mm": 0.15420636739256113,
+      "ipc2221_int_mm": 0.40115858782648217,
+      "ratio_2152_int_over_ext": 0.8578205535602207,
+      "ratio_2152_over_2221_ext": 0.6917127928207256,
+      "ratio_2152_over_2221_int": 0.22809116765112566,
+      "ratio_2221_int_over_ext": 2.6014398407120116
+    },
+    {
+      "current_a": 2.0,
+      "dt_c": 10.0,
+      "ipc2152_ext_fit_mm": 0.9256495392537198,
+      "ipc2152_int_fit_mm": 0.8224927132821924,
+      "ipc2221_ext_mm": 0.781410671685599,
+      "ipc2221_int_mm": 2.0327928532804505,
+      "ratio_2152_int_over_ext": 0.8885573625902792,
+      "ratio_2152_over_2221_ext": 1.1845877882074223,
+      "ratio_2152_over_2221_int": 0.40461216299284125,
+      "ratio_2221_int_over_ext": 2.6014398407120116
+    },
+    {
+      "current_a": 2.0,
+      "dt_c": 20.0,
+      "ipc2152_ext_fit_mm": 0.5066188860785373,
+      "ipc2152_int_fit_mm": 0.4379942677052485,
+      "ipc2221_ext_mm": 0.513080219348068,
+      "ipc2221_int_mm": 1.3347473240933216,
+      "ratio_2152_int_over_ext": 0.8645439002393399,
+      "ratio_2152_over_2221_ext": 0.9874067776813914,
+      "ratio_2152_over_2221_int": 0.3281477024145922,
+      "ratio_2221_int_over_ext": 2.6014398407120107
+    },
+    {
+      "current_a": 2.0,
+      "dt_c": 30.0,
+      "ipc2152_ext_fit_mm": 0.3560889866285261,
+      "ipc2152_int_fit_mm": 0.30296011983028676,
+      "ipc2221_ext_mm": 0.40115858782648217,
+      "ipc2221_int_mm": 1.0435899328155793,
+      "ratio_2152_int_over_ext": 0.8507989047870675,
+      "ratio_2152_over_2221_ext": 0.8876514112731633,
+      "ratio_2152_over_2221_int": 0.2903057132919134,
+      "ratio_2221_int_over_ext": 2.6014398407120116
+    },
+    {
+      "current_a": 5.0,
+      "dt_c": 10.0,
+      "ipc2152_ext_fit_mm": 4.555291460536028,
+      "ipc2152_int_fit_mm": 4.003897796612982,
+      "ipc2221_ext_mm": 2.765426426433168,
+      "ipc2221_int_mm": 7.194090482281086,
+      "ratio_2152_int_over_ext": 0.8789553492460473,
+      "ratio_2152_over_2221_ext": 1.6472293086500294,
+      "ratio_2152_over_2221_int": 0.5565537167588467,
+      "ratio_2221_int_over_ext": 2.6014398407120107
+    },
+    {
+      "current_a": 5.0,
+      "dt_c": 20.0,
+      "ipc2152_ext_fit_mm": 2.493164624011411,
+      "ipc2152_int_fit_mm": 2.132157835655478,
+      "ipc2221_ext_mm": 1.8158001277414897,
+      "ipc2221_int_mm": 4.72369479507667,
+      "ratio_2152_int_over_ext": 0.8552013834629635,
+      "ratio_2152_over_2221_ext": 1.3730391279972174,
+      "ratio_2152_over_2221_int": 0.45137502064649604,
+      "ratio_2221_int_over_ext": 2.601439840712011
+    },
+    {
+      "current_a": 5.0,
+      "dt_c": 30.0,
+      "ipc2152_ext_fit_mm": 1.7523793306132027,
+      "ipc2152_int_fit_mm": 1.474811067212348,
+      "ipc2221_ext_mm": 1.4197074600643826,
+      "ipc2221_int_mm": 3.6932835487675413,
+      "ratio_2152_int_over_ext": 0.8416049204918855,
+      "ratio_2152_over_2221_ext": 1.2343242392582299,
+      "ratio_2152_over_2221_int": 0.3993224586572825,
+      "ratio_2221_int_over_ext": 2.601439840712011
+    },
+    {
+      "current_a": 10.0,
+      "dt_c": 10.0,
+      "ipc2152_ext_fit_mm": 15.207106828750657,
+      "ipc2152_int_fit_mm": 13.25695813387985,
+      "ipc2221_ext_mm": 7.194090482281086,
+      "ipc2221_int_mm": 18.71499359829311,
+      "ratio_2152_int_over_ext": 0.8717607026220239,
+      "ratio_2152_over_2221_ext": 2.113833133765204,
+      "ratio_2152_over_2221_int": 0.7083602815172186,
+      "ratio_2221_int_over_ext": 2.6014398407120116
+    },
+    {
+      "current_a": 10.0,
+      "dt_c": 20.0,
+      "ipc2152_ext_fit_mm": 8.3230285279138,
+      "ipc2152_int_fit_mm": 7.059602566783687,
+      "ipc2221_ext_mm": 4.72369479507667,
+      "ipc2221_int_mm": 12.28840783527641,
+      "ratio_2152_int_over_ext": 0.8482011737803334,
+      "ratio_2152_over_2221_ext": 1.7619742360553396,
+      "ratio_2152_over_2221_int": 0.5744928603783511,
+      "ratio_2221_int_over_ext": 2.601439840712011
+    },
+    {
+      "current_a": 10.0,
+      "dt_c": 30.0,
+      "ipc2152_ext_fit_mm": 5.8500361428012235,
+      "ipc2152_int_fit_mm": 4.883118792381757,
+      "ipc2221_ext_mm": 3.6932835487675413,
+      "ipc2221_int_mm": 9.607854966810127,
+      "ratio_2152_int_over_ext": 0.8347160040012216,
+      "ratio_2152_over_2221_ext": 1.5839661551990494,
+      "ratio_2152_over_2221_int": 0.5082423505819204,
+      "ratio_2221_int_over_ext": 2.601439840712012
+    },
+    {
+      "current_a": 20.0,
+      "dt_c": 10.0,
+      "ipc2152_ext_fit_mm": 50.76647676761886,
+      "ipc2152_int_fit_mm": 43.89396230645866,
+      "ipc2221_ext_mm": 18.71499359829311,
+      "ipc2221_int_mm": 48.68592996526994,
+      "ratio_2152_int_over_ext": 0.8646249474309826,
+      "ratio_2152_over_2221_ext": 2.7126098922229387,
+      "ratio_2152_over_2221_int": 0.9015738702695085,
+      "ratio_2221_int_over_ext": 2.6014398407120116
+    },
+    {
+      "current_a": 20.0,
+      "dt_c": 20.0,
+      "ipc2152_ext_fit_mm": 27.78509016585097,
+      "ipc2152_int_fit_mm": 23.374436717353696,
+      "ipc2221_ext_mm": 12.28840783527641,
+      "ipc2221_int_mm": 31.9675537216057,
+      "ratio_2152_int_over_ext": 0.8412582639764778,
+      "ratio_2152_over_2221_ext": 2.2610813815999937,
+      "ratio_2152_over_2221_int": 0.7311925373118484,
+      "ratio_2221_int_over_ext": 2.6014398407120116
+    },
+    {
+      "current_a": 20.0,
+      "dt_c": 30.0,
+      "ipc2152_ext_fit_mm": 19.52940340839625,
+      "ipc2152_int_fit_mm": 16.168070385844622,
+      "ipc2221_ext_mm": 9.607854966810127,
+      "ipc2221_int_mm": 24.99425669444264,
+      "ratio_2152_int_over_ext": 0.827883476404277,
+      "ratio_2152_over_2221_ext": 2.0326496888077137,
+      "ratio_2152_over_2221_int": 0.6468714226432475,
+      "ratio_2221_int_over_ext": 2.601439840712011
+    }
+  ],
+  "title": "PCB trace width: IPC-2221 against the IPC-2152 empirical fit"
+}

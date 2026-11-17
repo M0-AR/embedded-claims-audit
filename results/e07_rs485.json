@@ -1,0 +1,563 @@
+{
+  "bias_limits": [
+    {
+      "load": "none",
+      "r_bias_max_ohm": 465.0,
+      "r_term_ohm": 60.0,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "32_unit_loads",
+      "r_bias_max_ohm": 400.8620689655171,
+      "r_term_ohm": 60.0,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "none",
+      "r_bias_max_ohm": 930.0,
+      "r_term_ohm": 120.0,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "32_unit_loads",
+      "r_bias_max_ohm": 704.5454545454545,
+      "r_term_ohm": 120.0,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "none",
+      "r_bias_max_ohm": 720.0,
+      "r_term_ohm": 60.0,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "32_unit_loads",
+      "r_bias_max_ohm": 620.6896551724137,
+      "r_term_ohm": 60.0,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "none",
+      "r_bias_max_ohm": 1440.0,
+      "r_term_ohm": 120.0,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "32_unit_loads",
+      "r_bias_max_ohm": 1090.909090909091,
+      "r_term_ohm": 120.0,
+      "vdd_v": 5.0
+    }
+  ],
+  "bias_table": [
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 390.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 235.71428571428572,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 430.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 215.21739130434784,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "none",
+      "passes_200mv": 0,
+      "r_bias_ohm": 470.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 198.0,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "none",
+      "passes_200mv": 0,
+      "r_bias_ohm": 560.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 167.79661016949152,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "none",
+      "passes_200mv": 0,
+      "r_bias_ohm": 680.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 139.43661971830986,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "none",
+      "passes_200mv": 0,
+      "r_bias_ohm": 750.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 126.92307692307692,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "none",
+      "passes_200mv": 0,
+      "r_bias_ohm": 1000.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 96.11650485436893,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 1,
+      "r_bias_ohm": 390.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 205.22388059701487,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 0,
+      "r_bias_ohm": 430.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 187.21633888048407,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 0,
+      "r_bias_ohm": 470.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 172.11404728789984,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 0,
+      "r_bias_ohm": 560.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 145.67392583872862,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 0,
+      "r_bias_ohm": 680.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 120.90864680019537,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 0,
+      "r_bias_ohm": 750.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 109.99999999999997,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 0,
+      "r_bias_ohm": 1000.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 83.19327731092436,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 390.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 440.0,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 430.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 404.08163265306126,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 470.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 373.58490566037733,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 560.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 319.3548387096774,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 680.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 267.56756756756755,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 750.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 244.44444444444443,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "none",
+      "passes_200mv": 0,
+      "r_bias_ohm": 1000.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 186.79245283018867,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 1,
+      "r_bias_ohm": 390.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 344.4676409185804,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 1,
+      "r_bias_ohm": 430.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 315.48757170172087,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 1,
+      "r_bias_ohm": 470.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 291.005291005291,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 1,
+      "r_bias_ohm": 560.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 247.74774774774775,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 1,
+      "r_bias_ohm": 680.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 206.76691729323306,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 0,
+      "r_bias_ohm": 750.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 188.57142857142856,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 0,
+      "r_bias_ohm": 1000.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 143.47826086956522,
+      "vdd_v": 3.3
+    },
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 390.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 357.14285714285717,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 430.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 326.0869565217391,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 470.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 300.0,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 560.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 254.23728813559322,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 680.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 211.26760563380282,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "none",
+      "passes_200mv": 0,
+      "r_bias_ohm": 750.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 192.30769230769232,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "none",
+      "passes_200mv": 0,
+      "r_bias_ohm": 1000.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 145.63106796116503,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 1,
+      "r_bias_ohm": 390.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 310.9452736318408,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 1,
+      "r_bias_ohm": 430.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 283.661119515885,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 1,
+      "r_bias_ohm": 470.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 260.77885952712097,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 1,
+      "r_bias_ohm": 560.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 220.71806945261918,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 0,
+      "r_bias_ohm": 680.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 183.19491939423546,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 0,
+      "r_bias_ohm": 750.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 166.66666666666666,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 0,
+      "r_bias_ohm": 1000.0,
+      "r_term_ohm": 60.0,
+      "v_ab_mv": 126.05042016806722,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 390.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 666.6666666666666,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 430.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 612.2448979591837,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 470.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 566.0377358490566,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 560.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 483.8709677419355,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 680.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 405.4054054054054,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 750.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 370.3703703703703,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "none",
+      "passes_200mv": 1,
+      "r_bias_ohm": 1000.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 283.0188679245283,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 1,
+      "r_bias_ohm": 390.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 521.9206680584551,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 1,
+      "r_bias_ohm": 430.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 478.0114722753347,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 1,
+      "r_bias_ohm": 470.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 440.9171075837743,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 1,
+      "r_bias_ohm": 560.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 375.3753753753754,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 1,
+      "r_bias_ohm": 680.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 313.28320802005015,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 1,
+      "r_bias_ohm": 750.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 285.7142857142858,
+      "vdd_v": 5.0
+    },
+    {
+      "load": "32_unit_loads",
+      "passes_200mv": 1,
+      "r_bias_ohm": 1000.0,
+      "r_term_ohm": 120.0,
+      "v_ab_mv": 217.39130434782612,
+      "vdd_v": 5.0
+    }
+  ],
+  "cases": {
+    "3v3_390_full_load": 0.20522388059701488,
+    "3v3_430_full_load": 0.18721633888048408,
+    "5v_560_full_load": 0.22071806945261918,
+    "5v_680_full_load": 0.18319491939423546,
+    "5v_680_no_load": 0.2112676056338028
+  },
+  "experiment": "E7",
+  "hidden_pattern": "Failsafe bias is usually checked against the two 120 Ohm terminators alone, giving a 60 Ohm bus. The 32-unit-load receiver input resistance (about 375 Ohm) sits in parallel with that, lowering the bus to 51.7 Ohm and the bias voltage by about 14%. A 680 Ohm bias that passes 5 V unloaded (211 mV) fails with full load (183 mV); 3.3 V needs about 390 Ohm, not 430 Ohm. Separately, dropping DE at TXE rather than TC truncates the final byte: the shift register can still be sending 11 bit times of data.",
+  "reflections": [
+    {
+      "gamma": 0.09090909090909091,
+      "gamma_pct": 9.090909090909092,
+      "return_loss_db": 20.8278537031645,
+      "z0_ohm": 100.0
+    },
+    {
+      "gamma": 0.0,
+      "gamma_pct": 0.0,
+      "return_loss_db": 999.0,
+      "z0_ohm": 120.0
+    },
+    {
+      "gamma": -0.1111111111111111,
+      "gamma_pct": -11.11111111111111,
+      "return_loss_db": 19.084850188786497,
+      "z0_ohm": 150.0
+    }
+  ],
+  "title": "RS-485 failsafe bias, termination, loading, and DE timing",
+  "uart_de_timing": [
+    {
+      "baud": 9600,
+      "bit_us": 104.16666666666667,
+      "byte_8e1_us": 1145.8333333333333,
+      "txe_to_tc_us": 1145.8333333333333,
+      "worst_case_write_to_tc_us": 2291.6666666666665
+    },
+    {
+      "baud": 19200,
+      "bit_us": 52.083333333333336,
+      "byte_8e1_us": 572.9166666666666,
+      "txe_to_tc_us": 572.9166666666666,
+      "worst_case_write_to_tc_us": 1145.8333333333333
+    },
+    {
+      "baud": 115200,
+      "bit_us": 8.680555555555555,
+      "byte_8e1_us": 95.48611111111111,
+      "txe_to_tc_us": 95.48611111111111,
+      "worst_case_write_to_tc_us": 190.97222222222223
+    },
+    {
+      "baud": 921600,
+      "bit_us": 1.0850694444444444,
+      "byte_8e1_us": 11.93576388888889,
+      "txe_to_tc_us": 11.93576388888889,
+      "worst_case_write_to_tc_us": 23.87152777777778
+    }
+  ],
+  "v_ab_min_mv": 200.0
+}

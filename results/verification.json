@@ -1,0 +1,13 @@
+{
+  "atol": 1e-09,
+  "e10_rtol": 1e-05,
+  "experiments_checked": 10,
+  "experiments_skipped": [],
+  "failures": [],
+  "fields_checked": 34650,
+  "generated_utc": "2026-11-17T19:24:31+00:00",
+  "max_relative_difference": 0.0,
+  "max_relative_path": "",
+  "passed": true,
+  "rtol": 1e-06
+}

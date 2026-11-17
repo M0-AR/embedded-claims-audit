@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Embedded Claims Audit — 22 claims, 10 experiments, zero hand-typed results</title>
+<meta name="description" content="A reproducible audit of quantitative claims in motor-drive and embedded-systems education. 22 claims, 10 executable experiments, 34,650 verified fields, and a live console.">
+<link rel="canonical" href="https://m0-ar.github.io/embedded-claims-audit/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Embedded Claims Audit">
+<meta property="og:description" content="Conventions, not constants. 22 audited engineering claims, 10 executable experiments, and 34,650 verified fields.">
+<meta property="og:url" content="https://m0-ar.github.io/embedded-claims-audit/">
+<meta property="og:image" content="https://m0-ar.github.io/embedded-claims-audit/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Embedded Claims Audit">
+<meta name="twitter:description" content="Conventions, not constants. 22 audited engineering claims, 10 executable experiments, and 34,650 verified fields.">
+<meta name="twitter:image" content="https://m0-ar.github.io/embedded-claims-audit/assets/og-image.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1416'/%3E%3Ccircle cx='32' cy='32' r='18' fill='none' stroke='%23f2b544' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%2357d6c7'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap site-head-inner">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>Embedded Claims Audit<small>Conventions, not constants</small></span></a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="index.html" aria-current="page">Overview</a>
+      <a href="preview.html">Live console</a>
+      <a href="https://github.com/M0-AR/embedded-claims-audit/blob/main/README.md">Paper</a>
+      <a href="https://github.com/M0-AR/embedded-claims-audit" rel="noopener">GitHub</a>
+      <a class="cta" href="preview.html">Try it live</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Reproducible engineering education audit</p>
+          <h1 id="hero-title">The formula is right. The missing condition is the story.</h1>
+          <p class="lede">A statement like “Kt = 9.55/Kv” is memorizable and often wrong. This project audits 22 quantitative claims from motor-drive and embedded-systems education with ten executable experiments — then makes every verdict inspectable in a live console.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="preview.html">Explore the live console</a>
+            <a class="btn" href="https://github.com/M0-AR/embedded-claims-audit/blob/main/README.md">Read the teaching paper</a>
+          </div>
+          <div class="stats" aria-label="Project at a glance">
+            <div class="stat"><strong>22</strong><span>claims audited</span></div>
+            <div class="stat"><strong>10</strong><span>executable experiments</span></div>
+            <div class="stat"><strong>34,650</strong><span>verified fields</span></div>
+            <div class="stat"><strong>0.000e+0</strong><span>max relative difference</span></div>
+          </div>
+        </div>
+        <figure class="hero-shot">
+          <img src="assets/console-overview.png" alt="Embedded Claims Audit console overview with verdict counts, verification panel, and claim rows" width="1440" height="900" fetchpriority="high">
+          <figcaption class="shot-caption"><span>Real console · not a mockup</span><span>v1.0.0</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-labelledby="inside-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">What is inside</p>
+          <h2 id="inside-title">One artifact, four ways in.</h2>
+          <p>Start with the teaching narrative, test a claim, change an operating point, or play the mission that rebuilds the audit. The same JSON evidence powers all four.</p>
+        </div>
+        <a class="btn small" href="preview.html">Open the preview</a>
+      </div>
+      <div class="grid-2">
+        <article class="card">
+          <h3>The paper</h3>
+          <p>A 22-claim registry, ten studies, a five-pattern failure analysis, threats to validity, and a beginner guide that assumes no motor-drive background. Generated from the same artifact as the code.</p>
+          <a class="more" href="https://github.com/M0-AR/embedded-claims-audit/blob/main/README.md">Read Conventions, Not Constants</a>
+        </article>
+        <article class="card">
+          <h3>The console</h3>
+          <p>Claims, experiments, six live calculators, a quiz, a field guide, and a 3D concept game. Search, filter, open a drawer, and follow any number back to its JSON path.</p>
+          <a class="more" href="demo/app.html">Launch the console</a>
+        </article>
+        <article class="card">
+          <h3>The verification loop</h3>
+          <p><code>make verify</code> re-runs all ten experiments and compares 34,650 fields. Floats use a relative tolerance of 1e-6; strings are exact. A mismatch exits non-zero.</p>
+          <a class="more" href="https://github.com/M0-AR/embedded-claims-audit/actions" rel="noopener">See the CI workflow</a>
+        </article>
+        <article class="card">
+          <h3>The dataset trail</h3>
+          <p>E10 uses the Paderborn LEA PMSM temperature dataset: 1,330,816 rows, 69 profiles, 184.8 hours, CC BY-SA 4.0. The audit shows why a real torque channel can still fail to be independent evidence.</p>
+          <a class="more" href="results/results.json">Inspect results.json</a>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="split-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">The verdict split</p>
+          <h2 id="split-title">Ten survive. Five need a qualifier. Seven do not hold.</h2>
+          <p>The interesting result is where the failures concentrate: normalization, convention, hidden loading, model-derived data, and arithmetic artifacts.</p>
+        </div>
+      </div>
+      <table class="audit-table">
+        <thead><tr><th>Pattern</th><th>What changes</th><th>Representative claim</th><th>Verdict</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Normalization</strong></td><td>13.397% of peak becomes 14.030% of mean.</td><td>C01 · six-step torque ripple</td><td><span class="verdict supported">supported</span></td></tr>
+          <tr><td><strong>Convention</strong></td><td>Kt is 0.03537 or 0.03063 N·m/A depending on the transform.</td><td>C10 · Kt = 9.5493/Kv is universal</td><td><span class="verdict qualified">qualified</span></td></tr>
+          <tr><td><strong>Hidden load</strong></td><td>A 680 Ω failsafe bias passes at 211 mV unloaded and fails at 183 mV with 32 unit loads.</td><td>C14 · RS-485 failsafe bias</td><td><span class="verdict refuted">refuted</span></td></tr>
+          <tr><td><strong>Regime change</strong></td><td>IPC-2221 is 2.114× narrower than IPC-2152 at 10 A, but nearly agrees at 1 A.</td><td>C16 · IPC-2221 is conservative</td><td><span class="verdict refuted">refuted</span></td></tr>
+          <tr><td><strong>Provenance</strong></td><td>The Paderborn torque channel is derived from commanded currents, so its temperature slope cannot calibrate Kt independently.</td><td>C20 · independent torque measurement</td><td><span class="verdict refuted">refuted</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="paths-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Where to start</p>
+          <h2 id="paths-title">A path for every reader.</h2>
+        </div>
+      </div>
+      <div class="grid-3">
+        <article class="card"><h3>Business and product</h3><p>Use the executive summary and the five failure patterns to see why a conditional number is a product risk, not a trivia error.</p><a class="more" href="https://github.com/M0-AR/embedded-claims-audit/blob/main/README.md#executive-summary">Executive summary</a></article>
+        <article class="card"><h3>Researchers and reviewers</h3><p>Follow the artifact model, the verification contract, and the threats-to-validity section. Every number resolves by path.</p><a class="more" href="https://github.com/M0-AR/embedded-claims-audit/blob/main/README.md#3-methodology">Methodology</a></article>
+        <article class="card"><h3>Students and career switchers</h3><p>Start with the beginner guide, then take the ten-question quiz and try a lab. No prior motor-drive background required.</p><a class="more" href="https://github.com/M0-AR/embedded-claims-audit/blob/main/README.md#-beginner-guide--read-this-and-you-are-a-professional">Beginner guide</a></article>
+      </div>
+    </section>
+
+    <section aria-labelledby="proof-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Proof, not promises</p>
+          <h2 id="proof-title">Run it yourself.</h2>
+          <p>Clone the repository, run the pipeline, and compare the artifact. The site you are reading is generated from the same commit.</p>
+        </div>
+      </div>
+      <div class="grid-2">
+        <article class="card"><h3>Local, in three commands</h3><p><code>pip install -e ".[dev]"</code><br><code>make all</code><br><code>make verify</code></p><p class="fine">Python 3.11+. The 300 MB E10 CSV is optional; the other nine experiments run without it.</p></article>
+        <article class="card"><h3>Container, one command</h3><p><code>docker compose run --rm audit</code></p><p>The full experiment pipeline, figure render, paper render, and verification run inside the image. No host Python required.</p></article>
+      </div>
+    </section>
+
+    <section aria-labelledby="cta-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Next</p>
+          <h2 id="cta-title">Open a claim and change the operating point.</h2>
+          <p class="lede">The console is the argument: a claim is a tuple of formula, convention, operating point, and hidden load. The tuple is what you can test.</p>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a class="btn primary" href="preview.html">Launch the live console</a>
+        <a class="btn" href="https://github.com/M0-AR/embedded-claims-audit" rel="noopener">Star or fork on GitHub</a>
+        <a class="btn ghost" href="https://github.com/M0-AR/embedded-claims-audit/releases/tag/v1.0.0" rel="noopener">v1.0.0 release</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap site-foot-inner">
+    <span>Embedded Claims Audit v1.0.0 · Code MIT · Dataset CC BY-SA 4.0</span>
+    <nav aria-label="Footer">
+      <a href="preview.html">Live console</a>
+      <a href="https://github.com/M0-AR/embedded-claims-audit/blob/main/README.md">Paper</a>
+      <a href="demo/app.html">Demo</a>
+      <a href="https://github.com/M0-AR/embedded-claims-audit" rel="noopener">GitHub</a>
+      <a href="https://github.com/M0-AR/embedded-claims-audit/releases" rel="noopener">Releases</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

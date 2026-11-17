@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report
+    url: https://github.com/M0-AR/embedded-claims-audit/security/advisories/new
+    about: Report a vulnerability privately. Do not open a public issue.
+  - name: Live console
+    url: https://m0-ar.github.io/embedded-claims-audit/preview.html
+    about: Try the current build before filing a console bug.

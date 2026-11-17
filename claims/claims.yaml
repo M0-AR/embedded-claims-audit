@@ -1,0 +1,227 @@
+claims:
+  - id: C01
+    claim: "A 120-degree six-step drive with sinusoidal back-EMF has about 13.4% torque ripple."
+    experiment: E1
+    path: [e01_sixstep, cases, sine_emf_120_blocks, pct_of_peak]
+    digits: 3
+    unit: "%"
+    comparison: "13.4%"
+    verdict: supported
+    note: "The exact value is 1 - sqrt(3)/2 = 13.3975% of peak; 14.0298% of mean."
+
+  - id: C02
+    claim: "The same 120-degree drive has zero torque ripple with an ideal trapezoidal back-EMF."
+    experiment: E1
+    path: [e01_sixstep, cases, trapezoid_emf_120_blocks, pct_of_peak]
+    digits: 3
+    unit: "%"
+    comparison: "0%"
+    verdict: supported
+    note: "Zero only with ideal 120-degree blocks, perfect alignment, and instantaneous commutation."
+
+  - id: C03
+    claim: "Space-vector PWM delivers about 15% more fundamental voltage than sinusoidal PWM."
+    experiment: E2
+    path: [e02_svpwm, linear_limit, gain_pct]
+    digits: 3
+    unit: "%"
+    comparison: "15%"
+    verdict: supported
+    note: "The exact gain is 2/sqrt(3) - 1 = 15.4701%; the linear limits are 1/sqrt(3) and 1/2."
+
+  - id: C04
+    claim: "SVPWM is equivalent to sinusoidal PWM plus min-max zero-sequence injection."
+    experiment: E2
+    path: [e02_svpwm, equivalence, svpwm_line_line_error]
+    digits: 2
+    unit: "V"
+    comparison: "exact"
+    verdict: supported
+    note: "The line-line error is at machine precision (2.2e-16 V); the dwell-time construction also agrees."
+
+  - id: C05
+    claim: "SVPWM is the same as adding a 1/6 third harmonic."
+    experiment: E2
+    path: [e02_svpwm, common_mode, minmax_third]
+    digits: 4
+    unit: ""
+    comparison: "1/6 = 0.1667"
+    verdict: qualified
+    note: "The exact min-max zero sequence has a third harmonic of 3*sqrt(3)/(8*pi) = 0.20675, not 1/6. The 1/6 injection is a different zero sequence with the same line-line result and headroom but a different common-mode/EMI profile."
+
+  - id: C06
+    claim: "Dead time creates fifth and seventh phase-current harmonics in a roughly 2:1 ratio."
+    experiment: E3
+    path: [e03_deadtime, base, i5_over_i7]
+    digits: 3
+    unit: "×"
+    comparison: "2×"
+    verdict: supported
+    note: "The simulated ratio is 2.079; the fifth is 0.124% and the seventh 0.0597% of the fundamental."
+
+  - id: C07
+    claim: "The dead-time fundamental voltage error is (4/pi) * t_d * f_sw * V_dc."
+    experiment: E3
+    path: [e03_deadtime, base, v_error_fund_v]
+    digits: 4
+    unit: "V"
+    comparison: "3.565 V"
+    verdict: supported
+    note: "The switching-level simulation gives 3.5685 V against 3.5651 V from the formula, a 0.10% difference."
+
+  - id: C08
+    claim: "The M/T speed-measurement crossover is n* = (60/N) * sqrt(f_clk/T_g)."
+    experiment: E4
+    path: [e04_mt_speed, crossover, 72MHz, counts_1000]
+    digits: 1
+    unit: "rpm"
+    comparison: "5091 rpm"
+    verdict: supported
+    note: "For N=1000 lines and a 1 s gate: 600 rpm at 1 MHz, 5091 rpm at 72 MHz, 8818 rpm at 216 MHz. A 4x decoder lowers each by 4."
+
+  - id: C09
+    claim: "The T method is unusable at high speed because its error grows with n squared."
+    experiment: E4
+    path: [e04_mt_speed, tables, 1MHz, 9, t_err_max_rpm]
+    digits: 1
+    unit: "rpm"
+    comparison: "~660 rpm at 6007 rpm"
+    verdict: supported
+    note: "The T error at 6007 rpm with a 1 MHz clock is 659.7 rpm (10.98%), while the M error is 5 rpm (0.083%)."
+
+  - id: C10
+    claim: "K_t = 9.5493/K_v is a universal conversion."
+    experiment: E5
+    path: [e05_kt_ke, constants, kt_foc_peak_nm_per_a]
+    digits: 5
+    unit: "Nm/A"
+    comparison: "0.03537 (9.5493/Kv)"
+    verdict: qualified
+    note: "The DC/120-degree rule is 9.5493/K_v; the FOC peak-phase rule is 8.2699/K_v (13.397% lower), and the RMS rule is 11.6955/K_v. The ODrive D5065 footnote selects the FOC convention."
+
+  - id: C11
+    claim: "A 4.7 kOhm pull-up is fine for I2C."
+    experiment: E6
+    path: [e06_i2c, traps, four_k7_only_standard]
+    digits: 0
+    unit: ""
+    comparison: "multi-mode"
+    true_label: "Standard-only"
+    false_label: "multi-mode"
+    verdict: refuted
+    note: "At 3.3 V, 4.7 kOhm supports 251 pF in Standard mode, 75.3 pF in Fast mode, and 30.1 pF in Fast-mode Plus. It also violates the 300 ns Fast-mode rise time at 100 pF."
+
+  - id: C12
+    claim: "Fast-mode I2C at 400 pF and 3.3 V is feasible."
+    experiment: E6
+    path: [e06_i2c, case_fast_400pf_3v3, feasible]
+    digits: 0
+    unit: ""
+    comparison: "feasible"
+    true_label: "feasible"
+    false_label: "infeasible"
+    verdict: refuted
+    note: "R_p(min) = 967 Ohm exceeds R_p(max) = 885 Ohm; the window is empty with the specified 3 mA sink."
+
+  - id: C13
+    claim: "Fast-mode Plus cannot drive 550 pF at 3.3 V."
+    experiment: E6
+    path: [e06_i2c, case_fmplus_550pf_3v3_20ma, feasible]
+    digits: 0
+    unit: ""
+    comparison: "infeasible"
+    true_label: "feasible"
+    false_label: "infeasible"
+    verdict: refuted
+    note: "With the correct 20 mA sink the window is 145-258 Ohm. Reusing the 3 mA Standard/Fast sink manufactures a false impossibility (R_p(max) = 258 Ohm < R_p(min) = 967 Ohm)."
+
+  - id: C14
+    claim: "A 680 Ohm failsafe bias is sufficient for a 5 V RS-485 bus."
+    experiment: E7
+    path: [e07_rs485, cases, 5v_680_full_load]
+    scale: 1000.0
+    digits: 1
+    unit: "mV"
+    comparison: ">= 200 mV"
+    verdict: refuted
+    note: "Unloaded it gives 211 mV, but 32 unit loads (375 Ohm) in parallel with the 60 Ohm termination give 183 mV. Use 560 Ohm at 5 V or 390 Ohm at 3.3 V."
+
+  - id: C15
+    claim: "A 120 Ohm termination matches Cat5e."
+    experiment: E7
+    path: [e07_rs485, reflections, 0, gamma_pct]
+    digits: 2
+    unit: "%"
+    comparison: "0% mismatch"
+    verdict: qualified
+    note: "Cat5e is about 100 Ohm, so 120 Ohm leaves a 9.09% reflection; 120 Ohm is the RS-485 nominal, not a cable match."
+
+  - id: C16
+    claim: "IPC-2221 trace-width tables are conservative."
+    experiment: E8
+    path: [e08_ipc, case_10a_10c, ratio_2152_over_2221_ext]
+    digits: 3
+    unit: "×"
+    comparison: ">= 1 (conservative)"
+    verdict: refuted
+    note: "At 10 A, 10 C, 1 oz the IPC-2152 fit is 2.11x wider than IPC-2221 (15.2 mm vs 7.19 mm); a 2026 chart reading is 2.60x wider (18.7 mm). IPC-2221 is non-conservative for external high-current traces."
+
+  - id: C17
+    claim: "IPC-2221 says internal traces need 2.6 times the area of external traces."
+    experiment: E8
+    path: [e08_ipc, case_10a_10c, ratio_2221_int_over_ext]
+    digits: 3
+    unit: "×"
+    comparison: "2.6×"
+    verdict: qualified
+    note: "The 2.60 factor is an arithmetic consequence of halving k (0.048 to 0.024), equivalent to halving the current. It is not an independent measurement; the IPC-2152 fit predicts 13.3 mm internal vs 15.2 mm external at the same conditions."
+
+  - id: C18
+    claim: "Unipolar PWM halves current ripple compared with bipolar PWM."
+    experiment: E9
+    path: [e09_hbridge, schemes, 1, ripple_ratio_to_bipolar]
+    digits: 3
+    unit: "×"
+    comparison: "0.5×"
+    verdict: qualified
+    note: "Single-leg unipolar gives 2m/(1+m): 0.750 at m=0.6 and 0.947 at m=0.9. Only the dual-leg aligned variant reaches 0.375, and it does so with the same four switching transitions as bipolar."
+
+  - id: C19
+    claim: "Unipolar PWM halves switching loss compared with bipolar PWM."
+    experiment: E9
+    path: [e09_hbridge, schemes, 1, loss_proxy_rel]
+    digits: 3
+    unit: "×"
+    comparison: "0.5×"
+    verdict: supported
+    note: "True for the single-leg variant (2 vs 4 transitions per switching period). The dual-leg aligned variant has 4 transitions and therefore no loss advantage."
+
+  - id: C20
+    claim: "The Paderborn torque channel is an independent measurement of electromagnetic torque."
+    experiment: E10
+    path: [e10_paderborn, torque_fit, alpha_pm_pct_per_k]
+    digits: 3
+    unit: "%/K"
+    comparison: "-0.12 %/K (magnet trend)"
+    verdict: refuted
+    note: "The torque slope is nearly temperature-flat (+0.022%/K high-load, -0.033%/K motoring), while the q-axis back-EMF channel falls at -0.122%/K. The dataset description says torque is derived from currents and voltages; the data behave like a fixed-parameter torque model."
+
+  - id: C21
+    claim: "The 1.5 factor in the dq power equation is an arbitrary convention."
+    experiment: E10
+    path: [e10_paderborn, power_balance, median_apparent_efficiency_1p0]
+    digits: 4
+    unit: ""
+    comparison: "<= 1"
+    verdict: refuted
+    note: "Without the 1.5 factor the median motoring apparent efficiency is 1.4238 (142%), which is impossible. With it, the median is 0.9492. The data fix the amplitude-invariant convention."
+
+  - id: C22
+    claim: "NdFeB magnets lose about 0.11-0.13% of remanence per kelvin."
+    experiment: E10
+    path: [e10_paderborn, uq_fit, alpha_pm_pct_per_k]
+    digits: 3
+    unit: "%/K"
+    comparison: "-0.11 to -0.13 %/K"
+    verdict: supported
+    note: "The q-axis back-EMF coefficient is -0.122%/K. The copper term rises at +0.461%/K, within 17% of the 0.393%/K copper coefficient."
