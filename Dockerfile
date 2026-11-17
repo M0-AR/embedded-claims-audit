@@ -1,4 +1,4 @@
-FROM python:3.12-slim
+FROM python:3.15-slim
 
 LABEL org.opencontainers.image.source="https://github.com/M0-AR/embedded-claims-audit" \
       org.opencontainers.image.description="Reproducible audit of quantitative claims in motor-drive and embedded-systems education" \
