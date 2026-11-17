@@ -181,7 +181,10 @@
     panel.focus({ preventScroll: true });
   }
 
-  tabs.forEach((tab) => tab.addEventListener('click', () => select(tab, false)));
+  tabs.forEach((tab) => tab.addEventListener('click', () => {
+    started = true;
+    select(tab, false);
+  }));
   document.getElementById('launch').addEventListener('click', launch);
 
   document.querySelector('[role="tablist"]').addEventListener('keydown', (event) => {
@@ -194,6 +197,7 @@
     else if (event.key === 'End') next = tabs.length - 1;
     else return;
     event.preventDefault();
+    started = true;
     select(tabs[next], true);
   });
 
