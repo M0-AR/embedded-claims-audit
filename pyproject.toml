@@ -44,7 +44,7 @@ Repository = "https://github.com/M0-AR/embedded-claims-audit"
 Issues = "https://github.com/M0-AR/embedded-claims-audit/issues"
 Changelog = "https://github.com/M0-AR/embedded-claims-audit/blob/main/CHANGELOG.md"
 Releases = "https://github.com/M0-AR/embedded-claims-audit/releases"
-Container = "https://github.com/M0-AR/embedded-claims-audit/pkgs/container/embedded-claims-audit"
+Container = "https://github.com/M0-AR/embedded-claims-audit/blob/main/Dockerfile"
 
 [project.scripts]
 eca-run = "eca.run:main"

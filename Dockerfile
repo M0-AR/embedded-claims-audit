@@ -1,5 +1,9 @@
 FROM python:3.12-slim
 
+LABEL org.opencontainers.image.source="https://github.com/M0-AR/embedded-claims-audit" \
+      org.opencontainers.image.description="Reproducible audit of quantitative claims in motor-drive and embedded-systems education" \
+      org.opencontainers.image.licenses="MIT"
+
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     MPLBACKEND=Agg \

@@ -9,7 +9,7 @@
 [![Dataset: CC BY-SA 4.0](https://img.shields.io/badge/dataset-CC%20BY--SA%204.0-lightgrey.svg)](https://www.kaggle.com/datasets/wkirgsn/electric-motor-temperature)
 [![Live console](https://img.shields.io/badge/live-console-2ea44f.svg)](https://m0-ar.github.io/embedded-claims-audit/preview.html)
 
-[Live console](https://m0-ar.github.io/embedded-claims-audit/preview.html) · [The paper](#abstract) · [Claim registry](https://m0-ar.github.io/embedded-claims-audit/demo/app.html#/claims) · [Results](results/results.json) · [Releases](https://github.com/M0-AR/embedded-claims-audit/releases) · [Container](https://github.com/M0-AR/embedded-claims-audit/pkgs/container/embedded-claims-audit)
+[Live console](https://m0-ar.github.io/embedded-claims-audit/preview.html) · [The paper](#abstract) · [Claim registry](https://m0-ar.github.io/embedded-claims-audit/demo/app.html#/claims) · [Results](results/results.json) · [Releases](https://github.com/M0-AR/embedded-claims-audit/releases) · [Container](#releases-packages-and-citation)
 
 <p align="center">
   <a href="https://m0-ar.github.io/embedded-claims-audit/preview.html">
@@ -127,14 +127,17 @@ The dataset is not redistributed. The expected SHA-256 and the Kaggle command ar
   pip install "embedded-claims-audit @ git+https://github.com/M0-AR/embedded-claims-audit.git@v1.0.0"
   ```
 
-- **Container:**
+- **Container:** build the same pipeline locally from the included `Dockerfile`:
 
   ```bash
+  docker build -t embedded-claims-audit:1.0.0 .
   docker run --rm \
     -v "$PWD/results:/app/results" \
-    ghcr.io/m0-ar/embedded-claims-audit:1.0.0 \
+    embedded-claims-audit:1.0.0 \
     make verify
   ```
+
+  A GHCR image is also published as `ghcr.io/m0-ar/embedded-claims-audit:1.0.0`. The package is private, so authenticate with `docker login ghcr.io` before pulling it.
 
 - **Citation:** use [`CITATION.cff`](CITATION.cff) or the “Cite this repository” button on GitHub.
 - **License:** MIT for code and prose. The Paderborn dataset remains CC BY-SA 4.0 and is not redistributed here.
